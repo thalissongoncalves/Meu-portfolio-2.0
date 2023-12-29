@@ -11,7 +11,7 @@ body {
     background-color: #1E1E28;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Asap';
 }
 
 #header-block {
@@ -141,6 +141,16 @@ hr {
     text-anchor: middle;
 }
 
+.skills-icon {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.skills-icon > img {
+    width: 25%;
+}
+
 #skills-block {
     display: flex;
     flex-wrap: wrap;
@@ -173,6 +183,14 @@ hr {
     color: #8c8c8e;
     font-size: 14px;
     line-height: 25px;
+}
+
+.check-icon {
+    width: 10px;
+}
+
+.download-icon {
+    width: 10px;
 }
 
 .download-cv-btn {
@@ -219,9 +237,9 @@ hr {
     
 }
 
-#social-block i {
-    color: #8c8c8e;
+#social-block img {
     margin: 0 10px;
+    width: 15px;
 }
 
 #menu-block {
@@ -232,9 +250,15 @@ hr {
     width: 100px;
 }
 
+.menu-icon {
+    margin: auto;
+    width: 25px;
+}
+
 .menu-btn {
     background-color: transparent;
     border: none;
+    
 }
 
 .menu-btn-block {
@@ -251,15 +275,6 @@ hr {
     margin-right: 100px;
     overflow-y: auto;
     scrollbar-width: thin;
-}
-
-#main-block::-webkit-scrollbar {
-    width: 7px;
-}
-
-#main-block::-webkit-scrollbar-thumb {
-    background-color: #0ce353;
-    border-radius: 4px;
 }
 
 #main-block::before {
@@ -406,8 +421,8 @@ hr {
     width: 100px;
 }
 
-.theme-btn > i {
-    margin-bottom: 10px;
+.theme-btn > img {
+    width: 20px;
 }
 
 .theme-btn > p {
@@ -420,8 +435,8 @@ hr {
     width: 100px;
 }
 
-.lenguage-btn > i {
-    margin-bottom: 10px;
+.lenguage-btn > img {
+    width: 20px;
 }
 
 .lenguage-btn > p {
@@ -430,7 +445,6 @@ hr {
 }
 
 .main-infos {
-    align-items: center;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -438,14 +452,9 @@ hr {
 }
 
 .main-infos > p {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     color: white;
     font-size: 15px;
     font-weight: 200;
-    text-align: center;
     width: 300px;
 }
 
@@ -464,20 +473,15 @@ hr {
 }
 
 .main-projects-cards {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: start;
-    margin: 0 30px;
-    height: 750px;
+    border: red solid 1px;
+    margin: 30px 30px;
+    height: 500px;
+    padding: 20px;
 }
 
 .main-projects-cards > div {
-    background-color: #2C2C38;
-    border-radius: 2px;
-    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: red;
+    display: inline-flex;
     height: 33%;
     width: 30%;
-    margin: 40px 20px;
 }
