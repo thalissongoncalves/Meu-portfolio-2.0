@@ -33,7 +33,7 @@ body {
     background-color: #24242F;
     display: flex;
     flex-direction: column;
-    height: 35%;
+    height: 35vh;
     justify-content: center;
     width: 18.7em;
 }
@@ -380,10 +380,8 @@ hr {
 }
 
 .main-infos {
-    align-items: center;
     display: flex;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-between;
     margin: 0 30px;
 }
 
@@ -391,12 +389,11 @@ hr {
     align-items: center;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex: 1;
     color: white;
     font-size: 15px;
     font-weight: 200;
     text-align: center;
-    width: 300px;
 }
 
 .main-infos-numbers {
@@ -407,30 +404,57 @@ hr {
 
 .main-projects-title {
     color: white;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
     margin-top: 50px;
     margin-left: 30px;
 }
 
 .main-projects-cards {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    align-content: center;
-    justify-content: start;
-    margin: 0 335px;
-    height: 1000px;
-    max-width: 70%;
-    width: 40%;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
-.main-projects-cards > div {
+.main-cards {
     background-color: #2C2C38;
-    border-radius: 2px;
-    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
     height: 200px;
-    width: 230px;
-    padding: 50px;
-    margin: 20px 15px;
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+    width: calc(33.33% - 80px);
+}
+
+.main-cards-title h1 {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+}
+
+.main-cards-paragraph {
+    color: rgb(141, 141, 141);
+    font-size: 13px;
+    font-weight: 400;
+    height: 130px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* margin-bottom: 100px; */
+    width: 100%;
+}
+
+.main-cards-btn {
+    background-color: transparent;
+    color: #0ce353;
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 8px 0;
+    cursor: pointer;
+    border-radius: 3px;
 }
