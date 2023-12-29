@@ -33,7 +33,7 @@ body {
     background-color: #24242F;
     display: flex;
     flex-direction: column;
-    height: 35%;
+    height: 30%;
     justify-content: center;
     width: 300px;
 }
@@ -141,20 +141,65 @@ hr {
     text-anchor: middle;
 }
 
-.skills-icon {
-    display: flex;
-    justify-content: center;
-    margin: 10px 0;
+.barra-progresso {
+    background-color: #191923;
+    height: 5px;
+    margin: auto;
+    margin-top: 15px;
+    width: 100%;
 }
 
-.skills-icon > img {
-    width: 25%;
+.barra-progresso-html {
+    background-color: #0ce353;
+    width: 100%;
+    height: 5px;
+}
+
+.barra-progresso-css {
+    background-color: #0ce353;
+    width: 100%;
+    height: 5px;
+}
+
+.barra-progresso-js {
+    background-color: #0ce353;
+    width: 100%;
+    height: 5px;
+}
+
+.barra-progresso-python {
+    background-color: #0ce353;
+    width: 30%;
+    height: 5px;
+}
+
+.barra-progresso-ts {
+    background-color: #0ce353;
+    width: 50%;
+    height: 5px;
+}
+
+.barra-progresso-react {
+    background-color: #0ce353;
+    width: 90%;
+    height: 5px;
+}
+
+.barra-progresso-mysql {
+    background-color: #0ce353;
+    width: 40%;
+    height: 5px;
+}
+
+.barra-progresso-wordpress {
+    background-color: #0ce353;
+    width: 70%;
+    height: 5px;
 }
 
 #skills-block {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     font-size: 14px;
     padding: 20px 30px;
     margin-bottom: 10px;
@@ -210,8 +255,7 @@ hr {
 }
 
 #scrollable-content {
-    background-color: #20202A;
-    height: 60%;
+    height: 65%;
     max-height: 100vh;
     overflow-y: auto;
     scrollbar-width: thin;
@@ -292,7 +336,6 @@ hr {
 }
 
 #main-block::after {
-    background-color: #1E1E28;
     content: "";
     position: absolute;
     top: 0;
@@ -314,10 +357,7 @@ hr {
     position: relative;
     z-index: 1;
     height: 300px;
-    margin-top: 50px;
-    margin-bottom: 25px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 50px 30px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -349,20 +389,16 @@ hr {
 .main-message > h2 {
     color: white;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
     margin-top: 50px;
     text-align: center;
     z-index: inherit;
 }
 
-.main-message > h2 > img {
-    width: 30px;
-}
-
 .main-message > h3 {
     border-right: #fff solid 2px;
     color: white;
-    font-size: 15px;
+    font-size: 10px;
     margin-bottom: 20px;
     overflow: hidden;
     text-align: center;
@@ -373,17 +409,16 @@ hr {
 
 .button-mode {
     display: flex;
-    margin: 15px auto;
+    margin: 30px auto;
 }
 
 .button-mode > button {
-    background-color: white;
-    border: none;
-    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+    background-color: #0ce353;
+    border: rgba(0, 0, 0, 0.572) solid 1px;
     border-radius: 5px;
-    color: black;
+    color: white;
     font-family: "Poppins";
-    padding: 5px;
+    padding: 7px;
     margin: 0 20px;
     z-index: 3;
 }
@@ -406,82 +441,6 @@ hr {
         width: 0;
     }
     to {
-        width: 20.5em;
+        width: 18em;
     }
-}
-
-#skills-tools-block > h2 {
-    color: white;
-    font-size: 15px;
-    font-weight: 400;
-}
-
-.theme-btn {
-    height: 30px;
-    width: 100px;
-}
-
-.theme-btn > img {
-    width: 20px;
-}
-
-.theme-btn > p {
-    color: white;
-    font-size: 10px;
-}
-
-.lenguage-btn {
-    height: 30px;
-    width: 100px;
-}
-
-.lenguage-btn > img {
-    width: 20px;
-}
-
-.lenguage-btn > p {
-    color: white;
-    font-size: 10px;
-}
-
-.main-infos {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 0 30px;
-}
-
-.main-infos > p {
-    color: white;
-    font-size: 15px;
-    font-weight: 200;
-    width: 300px;
-}
-
-.main-infos-numbers {
-    color: #0ce353;
-    font-size: 25px;
-    font-weight: 600;
-}
-
-.main-projects-title {
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
-    margin-top: 50px;
-    margin-left: 30px;
-}
-
-.main-projects-cards {
-    border: red solid 1px;
-    margin: 30px 30px;
-    height: 500px;
-    padding: 20px;
-}
-
-.main-projects-cards > div {
-    background-color: red;
-    display: inline-flex;
-    height: 33%;
-    width: 30%;
 }
