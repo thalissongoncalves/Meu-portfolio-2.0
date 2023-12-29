@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.home-message {
+    width: 50%;
+    height: 100%;
+}
+
+.photo {
+    background-image: url(./images/foto-perfil.jpeg);
+    width: 50%;
+    height: 875px;
+    z-index:1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
