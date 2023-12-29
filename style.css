@@ -17,7 +17,7 @@ body {
 #header-block {
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
     position: fixed;
-    width: 300px;
+    width: 18.7em;
     height: 100%;
 }
 
@@ -35,7 +35,7 @@ body {
     flex-direction: column;
     height: 35%;
     justify-content: center;
-    width: 300px;
+    width: 18.7em;
 }
 
 #avatar-block p {
@@ -46,14 +46,14 @@ body {
 
 .avatar-block-name {
     color: white;
-    font-size: 10px;
+    font-size: 18px;
     margin-bottom: 15px;
     margin-top: 15px;
     text-decoration: none;
     transition-duration: 0.5s;
 }
 
-.avatar-block-name h1:hover {
+.avatar-block-name:hover {
     transition-duration: 0.5s;
     color: #0ce353;
 }
@@ -96,51 +96,6 @@ hr {
     justify-content: space-between;
 }
 
-.progress-bar {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px; 
-}
-.progress-bar:before {
-    content: "";
-    position: absolute;
-    right: 0;
-    width: 50%;
-    z-index: 0;
-}
-/*===== The CSS =====*/
-.progress{
-    width: 200px;
-    height: 280px;
-    z-index: 1;
-}
-.progress .track, .progress .fill{
-    fill: rgba(0, 0, 0, 0);
-    stroke-width: 3;
-    transform: rotate(90deg)translate(0px, -80px);
-}
-.progress .track{
-    stroke: #191923;
-}
-.progress .fill {
-    stroke: #0ce353;
-    stroke-dasharray: 219.99078369140625;
-    stroke-dashoffset: -219.99078369140625;
-    transition: stroke-dashoffset 1s;
-}
-.progress .value {
-    fill: #0ce353;
-    text-anchor: middle;
-}
-.progress .text {
-    font-size: 12px;
-    fill: #fff;
-    text-anchor: middle;
-}
-
 #skills-block {
     display: flex;
     flex-wrap: wrap;
@@ -148,12 +103,6 @@ hr {
     font-size: 14px;
     padding: 20px 30px;
     margin-bottom: 10px;
-}
-
-.barra-progresso-pai {
-    margin-top: 10px;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 #skills-block p {
@@ -165,14 +114,20 @@ hr {
     float: right;
 }
 
-#skills-tools-block {
-    padding: 20px 30px;
+.skills-tools-block {
+    padding: 10px 30px;
 }
 
-#skills-tools-block p {
+.skills-tools-block p {
     color: #8c8c8e;
     font-size: 14px;
     line-height: 25px;
+}
+
+.skills-tools-block > h2 {
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 .download-cv-btn {
@@ -251,6 +206,7 @@ hr {
     margin-right: 100px;
     overflow-y: auto;
     scrollbar-width: thin;
+    max-width: 74%;
 }
 
 #main-block::-webkit-scrollbar {
@@ -269,7 +225,7 @@ hr {
     left: 0;
     width: 100%;
     height: 50%;
-    background-image: url("./images/215911.gif");
+    background-image: url("./images/bedroom-vibe.gif");
     background-repeat: no-repeat;
     background-size: 100%;
     opacity: 0.1;
@@ -290,7 +246,7 @@ hr {
 }
 
 .main-message {
-    background-image: url("./images/215911.gif");
+    background-image: url("./images/bedroom-vibe.gif");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -395,12 +351,6 @@ hr {
     }
 }
 
-#skills-tools-block > h2 {
-    color: white;
-    font-size: 15px;
-    font-weight: 400;
-}
-
 .theme-btn {
     height: 30px;
     width: 100px;
@@ -415,16 +365,16 @@ hr {
     font-size: 10px;
 }
 
-.lenguage-btn {
+.language-btn {
     height: 30px;
     width: 100px;
 }
 
-.lenguage-btn > i {
+.language-btn > i {
     margin-bottom: 10px;
 }
 
-.lenguage-btn > p {
+.language-btn > p {
     color: white;
     font-size: 10px;
 }
@@ -469,15 +419,18 @@ hr {
     flex-wrap: wrap;
     align-content: center;
     justify-content: start;
-    margin: 0 30px;
-    height: 750px;
+    margin: 0 335px;
+    height: 1000px;
+    max-width: 70%;
+    width: 40%;
 }
 
 .main-projects-cards > div {
     background-color: #2C2C38;
     border-radius: 2px;
     box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
-    height: 33%;
-    width: 30%;
-    margin: 40px 20px;
+    height: 200px;
+    width: 230px;
+    padding: 50px;
+    margin: 20px 15px;
 }
