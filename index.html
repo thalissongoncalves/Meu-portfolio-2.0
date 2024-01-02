@@ -145,11 +145,48 @@
         
     </header>
 
-    <aside id="menu-block">
+    <nav id="menu-block">
         <div class="menu-btn-block">
-            <button class="menu-btn" type="menu"><i class="fa-solid fa-bars fa-2xl" style="color: #8c8c8e;"></i></button>
+            <button class="menu-btn" type="menu">
+                <a href="#">
+                    <i class="fa-solid fa-bars fa-2xl" id="btn-exp" style="color: #8c8c8e;"></i>
+                </a>
+            </button>
         </div>
-    </aside>
+
+        <ul class="expandir">
+            <li class="item-menu ativo">
+                <a href="#">
+                    <span class="icon"><i class="fa-solid fa-house" style="color: white"></i></span>
+                    <span class="txt-link">Home</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="fa-solid fa-diagram-project" style="color: white"></i></span>
+                    <span class="txt-link">Projetos</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="fa-solid fa-certificate" style="color: white"></i></span>
+                    <span class="txt-link">Certificados e Experiências</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="fa-solid fa-user-tie" style="color: white"></i></span>
+                    <span class="txt-link">Sobre mim</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="fa-solid fa-mobile" style="color: white"></i></span>
+                    <span class="txt-link">Contato</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
     <main id="main-block">
 
@@ -208,12 +245,17 @@
         <h2 class="main-projects-title">Recomendações</h2>
 
         <div class="main-recommendations">
-
+            <div><p>1</p></div>
+            <div><p>2</p></div>
+            <div><p>3</p></div>
+            <div><p>4</p></div>
+            <div><p>5</p></div>
         </div>
 
     </main>
 
 </body>
 <script src="./main.js"></script>
+<script src="./menu.js"></script>
 <script src="https://kit.fontawesome.com/66583b1d9a.js" crossorigin="anonymous"></script>
 </html>

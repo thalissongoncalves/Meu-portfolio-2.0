@@ -3,15 +3,12 @@
     padding: 0;
 }
 
-html, body {
-    height: 100vh;
-}
-
 body {
     background-color: #1E1E28;
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    height: 100vh;
 }
 
 #header-block {
@@ -159,7 +156,7 @@ hr {
 }
 
 #scrollable-content::-webkit-scrollbar-thumb {
-    background-color: #0ce353;
+    background-color: #24242F;
     border-radius: 4px;
 }
 
@@ -182,9 +179,24 @@ hr {
 #menu-block {
     box-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 0.1);
     height: 100vh;
+    top: 0;
+    bottom: 0;
     right: 0;
+    overflow: hidden;
     position: fixed;
     width: 100px;
+}
+
+#menu-block.expandir {
+    background-color: #24242F;
+    font-weight: 600;
+    transition: 0.2s;
+    width: 300px;
+    z-index: 3;
+}
+
+#menu-block.expandir ul li.item-menu a .txt-link {
+    text-wrap: wrap;
 }
 
 .menu-btn {
@@ -193,7 +205,7 @@ hr {
 }
 
 .menu-btn-block {
-    background-color: #24242F;
+    background-color: transparent;
     display: flex;
     height: 100px;
     justify-content: center;
@@ -214,7 +226,7 @@ hr {
 }
 
 #main-block::-webkit-scrollbar-thumb {
-    background-color: #0ce353;
+    background-color: #24242F;
     border-radius: 4px;
 }
 
@@ -457,4 +469,41 @@ hr {
     padding: 8px 0;
     cursor: pointer;
     border-radius: 3px;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu {
+    transition: 0.2s;
+}
+
+ul li.ativo {
+    background-color: #0ce3540c;
+}
+
+ul li.item-menu:hover {
+    background-color: #0ce3540c;
+}
+
+ul li.item-menu a {
+    color: white;
+    display: flex;
+    font-size: 15   px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    padding: 20px 4%;
+    text-decoration: none;
+}
+
+ul li.item-menu a .txt-link {
+    text-wrap: nowrap;
+    margin-left: 50px;
+}
+
+ul li.item-menu a .icon > i {
+    margin-left: 33px;
+    font-size: 20px;
 }
