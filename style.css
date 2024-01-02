@@ -293,18 +293,22 @@ hr {
 
 .main-message > h1 {
     color: white;
-    font-size: 45px;
+    font-family: cursive;
+    font-size: 40px;
     font-weight: bold;
+    text-transform: uppercase;
     text-align: center;
     z-index: inherit;
 }
 
 .main-message > h2 {
     color: white;
+    font-family: cursive;
     font-size: 20px;
     font-weight: 600;
     margin-top: 50px;
     text-align: center;
+    text-transform: uppercase;
     z-index: inherit;
 }
 
@@ -314,7 +318,7 @@ hr {
 
 .main-message > h3 {
     border-right: #fff solid 2px;
-    color: white;
+    color: #0ce353;
     font-size: 15px;
     margin-bottom: 20px;
     overflow: hidden;
@@ -373,7 +377,7 @@ hr {
 }
 
 .theme-btn > p {
-    color: white;
+    color: #0ce353;
     font-size: 10px;
 }
 
@@ -387,7 +391,7 @@ hr {
 }
 
 .language-btn > p {
-    color: white;
+    color: #0ce353;
     font-size: 10px;
 }
 
@@ -481,17 +485,19 @@ ul li.item-menu {
 }
 
 ul li.ativo {
-    background-color: #0ce3540c;
+    background-color: #0ce35490;
+    border-radius: 5px;
 }
 
 ul li.item-menu:hover {
-    background-color: #0ce3540c;
+    background-color: #0ce35490;
+    border-radius: 5px;
 }
 
 ul li.item-menu a {
     color: white;
     display: flex;
-    font-size: 15   px;
+    font-size: 15px;
     line-height: 40px;
     margin-bottom: 20px;
     padding: 20px 4%;
