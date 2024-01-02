@@ -117,8 +117,13 @@ hr {
 
 .skills-tools-block p {
     color: #8c8c8e;
+    display: flex;
     font-size: 14px;
-    line-height: 25px;
+    line-height: 35px;
+}
+
+.skills-tools-block p img {
+    margin-right: 5px;
 }
 
 .skills-tools-block > h2 {
@@ -377,7 +382,7 @@ hr {
 }
 
 .theme-btn > p {
-    color: #0ce353;
+    color: white;
     font-size: 10px;
 }
 
@@ -391,7 +396,7 @@ hr {
 }
 
 .language-btn > p {
-    color: #0ce353;
+    color: white;
     font-size: 10px;
 }
 
