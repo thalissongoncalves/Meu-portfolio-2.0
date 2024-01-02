@@ -518,3 +518,67 @@ ul li.item-menu a .icon > i {
     margin-left: 33px;
     font-size: 20px;
 }
+
+#main-recommendations {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.title-recommendations {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+
+#main-recommendations div {
+    background-color: #2C2C38;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 30px;
+    height: 200px;
+    margin: 10px;
+    width: 50%;
+}
+
+.title-people-recommendations {
+    font-size: 15px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.enterprise-recommendations {
+    color: #8c8c8e;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.comment-recommendations {
+    color: #8c8c8e;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.stars-block {
+    background-color: #1E1E28;
+    border-radius: 15px;
+    display: flex;
+    height: 28px;
+    justify-content: center;
+    width: 110px;
+}
+
+.avatar-recommendations {
+    border-radius: 50px;
+    position: absolute;
+    top: 1110px;
+    margin-left: 370px;
+    width: 80px;
+}
