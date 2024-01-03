@@ -1,3 +1,14 @@
+@font-face {
+    font-family: Poppins-regular;
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-bold;
+    src: url(./fonts/Poppins-Bold.ttf);
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,20 +18,21 @@ body {
     background-color: #1E1E28;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins-regular', sans-serif;
     height: 100vh;
 }
 
 #header-block {
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
     position: fixed;
-    width: 18.7em;
+    width: 18.7rem;
     height: 100%;
 }
 
 .avatar {
     border-radius: 50%;
     height: 100px;
+    margin-bottom: 5px;
     vertical-align: middle;
     width: 100px;
 }
@@ -43,9 +55,8 @@ body {
 
 .avatar-block-name {
     color: white;
+    display: flex;
     font-size: 18px;
-    margin-bottom: 15px;
-    margin-top: 15px;
     text-decoration: none;
     transition-duration: 0.5s;
 }
@@ -53,6 +64,10 @@ body {
 .avatar-block-name:hover {
     transition-duration: 0.5s;
     color: #0ce353;
+}
+
+.avatar-block-name img {
+    margin-right: 10px;
 }
 
 #address-block {
@@ -200,6 +215,12 @@ hr {
     z-index: 3;
 }
 
+#menu-block.fechar {
+    background-color: #24242F;
+    transition: 0.2s;
+    z-index: 3;
+}
+
 #menu-block.expandir ul li.item-menu a .txt-link {
     text-wrap: wrap;
 }
@@ -241,11 +262,11 @@ hr {
     top: 0;
     left: 0;
     width: 100%;
-    height: 50%;
+    height: 20rem;
     background-image: url("./images/bedroom-vibe.gif");
     background-repeat: no-repeat;
     background-size: 100%;
-    opacity: 0.1;
+    opacity: 0.3;
     z-index: -1;
 }
 
@@ -256,7 +277,7 @@ hr {
     top: 0;
     left: 0;
     width: 100%;
-    height: 50%;
+    height: 20rem;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
     pointer-events: none;
     z-index: 0;
@@ -268,10 +289,10 @@ hr {
     background-size: 100%;
     background-position: center;
     border-radius: 5px;
-    font-family: "Poppins";
+    font-family: "Poppins-bold";
     position: relative;
     z-index: 1;
-    height: 300px;
+    height: 20rem;
     margin-top: 50px;
     margin-bottom: 25px;
     margin-left: 30px;
@@ -280,6 +301,7 @@ hr {
     align-items: center;
     flex-direction: column;
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+    line-height: 40px;
 }
 
 
@@ -290,7 +312,7 @@ hr {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 20rem;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     pointer-events: none;
     z-index: 0;
@@ -298,6 +320,7 @@ hr {
 
 .main-message > h1 {
     color: white;
+    font-family: cursive;
     font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
@@ -307,6 +330,7 @@ hr {
 
 .main-message > h2 {
     color: white;
+    font-family: cursive;
     font-size: 20px;
     font-weight: 600;
     margin-top: 50px;
@@ -342,7 +366,7 @@ hr {
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     color: black;
-    font-family: "Poppins";
+    font-family: "Poppins-bold";
     padding: 5px;
     margin: 0 20px;
     z-index: 3;
@@ -366,7 +390,7 @@ hr {
         width: 0;
     }
     to {
-        width: 20.5em;
+        width: 14em;
     }
 }
 
@@ -435,22 +459,25 @@ hr {
     justify-content: space-around;
     margin: 0 auto;
     max-width: 1200px;
+    height: 400px;
 }
 
 .main-cards {
+    align-items: center;
     background-color: #2C2C38;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
-    height: 200px;
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
     padding: 20px;
-    text-align: left;
-    width: calc(33.33% - 80px);
+    text-align: center;
+    width: 42%;
 }
 
 .main-cards-title h1 {
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     width: 100%;
 }
@@ -461,21 +488,27 @@ hr {
     font-weight: 400;
     height: 130px;
     margin-top: 10px;
-    margin-bottom: 10px;
-    /* margin-bottom: 100px; */
     width: 100%;
 }
 
 .main-cards-btn {
     background-color: transparent;
-    color: #0ce353;
     border: none;
+    color: #0ce353;
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 1px;
     padding: 8px 0;
     cursor: pointer;
     border-radius: 3px;
+}
+
+.project-one {
+    margin-left: 10px;
+}
+
+.project-two {
+    margin-right: 10px;
 }
 
 ul {
@@ -520,15 +553,18 @@ ul li.item-menu a .icon > i {
 #main-recommendations {
     display: flex;
     flex-direction: row;
+    height: 320px;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 100px;
 }
 
 .title-recommendations {
     color: white;
     font-size: 20px;
     font-weight: 600;
-    margin-top: 25px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     margin-left: 30px;
 }
 
@@ -539,7 +575,7 @@ ul li.item-menu a .icon > i {
     flex-direction: column;
     justify-content: left;
     padding: 30px;
-    height: 200px;
+    height: 100%;
     margin: 10px;
     width: 50%;
 }
@@ -575,21 +611,6 @@ ul li.item-menu a .icon > i {
 
 .avatar-recommendations {
     border-radius: 50px;
-    position: absolute;
-    top: 1110px;
-    margin-left: 370px;
+    margin-bottom: 10px;
     width: 80px;
-}
-
-footer {
-    align-items: center;
-    background-color: #2c2c3800;
-    color: rgba(255, 255, 255, 0.812);
-    display: flex;
-    font-size: 10px;
-    justify-content: space-between;
-    height: 20px;
-    margin-left: 320px;
-    margin-bottom: 20px;
-    width: 70.6%;
 }
