@@ -614,3 +614,16 @@ ul li.item-menu a .icon > i {
     margin-bottom: 10px;
     width: 80px;
 }
+
+footer {
+    align-items: center;
+    background-color: #2c2c3800;
+    color: rgba(255, 255, 255, 0.812);
+    display: flex;
+    font-size: 10px;
+    justify-content: space-between;
+    height: 20px;
+    margin-left: 320px;
+    margin-bottom: 20px;
+    width: 70.6%;
+}
