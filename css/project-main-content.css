@@ -1,0 +1,46 @@
+.main-block {
+    position: relative;
+    height: 100%;
+    margin-left: 300px;
+    margin-right: 100px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    max-width: 100%;
+}
+
+.main-block::-webkit-scrollbar {
+    width: 7px;
+}
+
+.main-block::-webkit-scrollbar-thumb {
+    background-color: #2c2c389a;
+    border-radius: 4px;
+}
+
+.main-block::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 58rem;
+    background-image: url("../images/bedroom-vibe.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.main-block::after {
+    background-color: #1E1E28;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 58rem;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+    pointer-events: none;
+    z-index: 0;
+}

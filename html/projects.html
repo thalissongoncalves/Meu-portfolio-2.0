@@ -4,22 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thálisson G. | Portfólio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/left-menu.css">
+    <link rel="stylesheet" href="../css/right-menu.css">
+    <link rel="stylesheet" href="../css/project-main-content.css">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
 </head>
 <body>
 
-    <header id="header-block">
+    <!-- Menu da lateral direita -->
+    <header>
+        <nav id="menu-block">
+
+            <!-- Botão de hamburguer -->
+            <div class="menu-btn-block">
+                <button class="menu-btn" type="menu">
+                    <a href="#">
+                        <i class="fa-solid fa-bars fa-2xl" id="btn-exp" style="color: #8c8c8e;"></i>
+                    </a>
+                </button>
+            </div>
+
+            <!-- Todas as opções do menu -->
+            <ul class="expandir">
+                <li class="item-menu ativo">
+                    <a href="home.html">
+                        <span class="icon"><i class="fa-solid fa-house" style="color: white"></i></span>
+                        <span class="txt-link">Home</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-diagram-project" style="color: white"></i></span>
+                        <span class="txt-link">Projetos</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-user-tie" style="color: white"></i></span>
+                        <span class="txt-link">Sobre mim</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-mobile" style="color: white"></i></span>
+                        <span class="txt-link">Contato</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Informações na lateral esquerda -->
+    <section class="left-content">
 
         <!-- Foto/Avatar -->
-        <div id="avatar-block">
-            <img src="./images/meu-avatar.jpeg" alt="avatar" class="avatar">
+        <div class="avatar-block">
+            <img src="../images/meu-avatar-2.jpeg" alt="avatar" class="avatar">
             <h1><a href="#" class="avatar-block-name"> Thálisson Gonçalves</a></h1>
             <p>Desenvolvedor Full-Stack</p>
             <img width="32" height="32" src="https://img.icons8.com/color/48/brazil.png" alt="brazil"/>
         </div>
 
+        <!-- Lista de Habilidades -->
         <div id="scrollable-content">
-            <!-- Círculo de Progresso Lenguages -->
+
             <div class="skills-tools-block">
                 <h2>Idiomas:</h2>
                 <p><img width="32" height="32" src="https://img.icons8.com/color/48/usa.png" alt="usa"/> Inglês Intermediário</p>
@@ -27,7 +76,6 @@
 
             <hr>
 
-            <!-- Barra de Progresso Skills -->
             <div class="skills-tools-block">
                 <h2>Principais Ferramentas:</h2>
                 <p><img width="32" height="32" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1"/> HTML</p>
@@ -112,138 +160,39 @@
             
             <!-- Botão para baixar currículo -->
             <button class="download-cv-btn">
-                <a href="./curriculo/curriculo.pdf" download="thalisson-curriculo">
+                <a href="../curriculo/curriculo.pdf" download="thalisson-curriculo">
                     DOWNLOAD CURRÍCULO 
                     <i class="fa-solid fa-download" style="color: #8c8c8e"></i>
                 </a>
             </button>
-            
+
         </div>
 
+
+        <!-- Ícones de redes sociais -->
         <div id="social-block">
             <a href="https://www.linkedin.com/in/thalissongoncalves/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/thalissongoncalves" target="_blank"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.instagram.com/thalissonzpyg/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         </div>
         
-    </header>
+    </section>
 
-    <nav id="menu-block">
-        <div class="menu-btn-block">
-            <button class="menu-btn" type="menu">
-                <a href="#">
-                    <i class="fa-solid fa-bars fa-2xl" id="btn-exp" style="color: #8c8c8e;"></i>
-                </a>
-            </button>
-        </div>
-
-        <ul class="expandir">
-            <li class="item-menu ativo">
-                <a href="#">
-                    <span class="icon"><i class="fa-solid fa-house" style="color: white"></i></span>
-                    <span class="txt-link">Home</span>
-                </a>
-            </li>
-            <li class="item-menu">
-                <a href="#">
-                    <span class="icon"><i class="fa-solid fa-diagram-project" style="color: white"></i></span>
-                    <span class="txt-link">Projetos</span>
-                </a>
-            </li>
-            <li class="item-menu">
-                <a href="#">
-                    <span class="icon"><i class="fa-solid fa-user-tie" style="color: white"></i></span>
-                    <span class="txt-link">Sobre mim</span>
-                </a>
-            </li>
-            <li class="item-menu">
-                <a href="#">
-                    <span class="icon"><i class="fa-solid fa-mobile" style="color: white"></i></span>
-                    <span class="txt-link">Contato</span>
-                </a>
-            </li>
+    <!-- Conteúdo da página PROJECT -->
+    <main id="project" class="main-block">
+        <ul>
+            <li>Principais Projetos</li>
+            <li></li>
         </ul>
-    </nav>
-
-    <main id="main-block">
-
-        <div class="main-message">
-            <h2>Olá, muito prazer! <i class="fa-solid fa-hands"></i></h2> 
-            <h1>Seja bem-vindo!</h1>
-            <p class="main-message-saying"></p>
-            <div class="button-mode">
-                <button class="theme-btn" type="button"><i class="fa-solid fa-sun" style="color: rgba(255, 255, 255, 0.834)"></i><br><p>Modo claro</p></button>
-                <button class="language-btn" type="button"><i class="fa-solid fa-flag-usa" style="color: rgba(255, 255, 255, 0.834)"></i><br><p>Modo inglês</p></button>
-            </div>
-        </div>
-
-        <div class="main-infos">
-            <p><span class="main-infos-numbers">01</span>Ano de experiência</p>
-            <p><span class="main-infos-numbers">10</span>Certificados conquistados</p>
-            <p><span class="main-infos-numbers">44</span>Projetos concluídos</p>
-            <p><span class="main-infos-numbers">04</span>Experiências de trabalho</p>
-        </div>
-
-        <!-- <h2 class="main-projects-title">Principais Projetos</h2>
-
-        <div class="main-projects-cards">
-            <div class="main-cards project-one">
-                <img src="./images/sistema-solar-project.png" style="width: 300px; margin-bottom: 15px;" />
-                <div class="main-cards-title"><h1>Integração de sistemas</h1></div>
-                <div class="main-cards-paragraph" style="margin-top: 15px;"><p>Integrei Bitrix CRM, Python, Google Sheets, Google Cloud e Looker Studio para análise eficiente de dados de projetos. API Bitrix em Python, manipulação de dados na planilha do Google Sheets com Google Cloud, fonte primária no Looker Studio.</p></div>
-                <div><button class="main-cards-btn">SAIBA MAIS <i class="fa-solid fa-arrow-right" style="color: rgba(255, 255, 255, 0.834);"></i></button></div>
-            </div>
-            <div class="main-cards project-two">
-                <img src="./images/Pokedex-project.png" style="width: 300px; margin-bottom: 15px;" />
-                <div class="main-cards-title"><h1>Pág. Inicial para empresas</h1></div>
-                <div class="main-cards-paragraph" style="margin-top: 15px;"><p>Criei uma página de links aprimorada para empresas, semelhante ao Linktree, com integração via API ao Bitrix CRM. Isso permite aos usuários abrir formulários na página para solicitar assistência técnica ao departamento de TI e outras necessidades.</p></div>
-                <div><button class="main-cards-btn">SAIBA MAIS <i class="fa-solid fa-arrow-right" style="color: rgba(255, 255, 255, 0.834);"></i></button></div>
-            </div>
-        </div> -->
-
-        <div>
-            <h1 class="title-recommendations">Recomendações</h1>
-            <div id="main-recommendations">
-                <div>
-                    <img src="./images/Alice-foto.jpeg" alt="avatar" class="avatar-recommendations">
-                    <h1 class="title-people-recommendations">Alice Eugenio</h1>
-                    <h2 class="enterprise-recommendations">Business Development Center Representative | Grupo EROS</h2>
-                    <p class="comment-recommendations">Profissional com habilidades em Programação e Análise de Dados, sempre atendendo as demandas e suportes solicitados na empresa, amplo conhecimento em informática e tecnologias, responsável e pró-ativo!</p>
-                    <ul class="stars-block">
-                        <li>
-                            <i class="fas fa-star" style="color: #0ce353; font-size: 10px;"></i>
-                            <i class="fas fa-star" style="color: #0ce353; font-size: 10px;"></i>
-                            <i class="fas fa-star" style="color: #0ce353; font-size: 10px;"></i>
-                            <i class="fas fa-star" style="color: #0ce353; font-size: 10px;"></i>
-                            <i class="fas fa-star" style="color: #0ce353; font-size: 10px;"></i>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <img src="./images/Rodrigo-foto.jpeg" alt="avatar" class="avatar-recommendations">
-                    <h1 class="title-people-recommendations">Rodrigo Milani</h1>
-                    <h2 class="enterprise-recommendations">Coordenador Departamento de T.I. | Grupo EROS</h2>
-                    <p class="comment-recommendations">Profissional com amplo conhecimento em HTML, Wordpress, Excel, Python. Grande experiência com informática em geral. Adapta-se facilmente a qualquer ambiente e não teme novos desafios. Pro-ativo, responsável e prestativo.</p>
-                    <ul class="stars-block">
-                        <li>
-                            <i class="fas fa-star" style="color: #0ce353; font-size: 10px;"></i>
-                            <i class="fas fa-star" style="color: #0ce353; font-size: 10px;"></i>
-                            <i class="fas fa-star" style="color: #0ce353; font-size: 10px;"></i>
-                            <i class="fas fa-star" style="color: #0ce353; font-size: 10px;"></i>
-                            <i class="fas fa-star" style="color: #0ce353; font-size: 10px;"></i>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
     </main>
+
+    <!-- Rodapé -->
     <footer>
         <p>© 2024 Todos os direitos reservados.</p>
         <p>E-mail: thalissongsilva70@gmail.com</p>
     </footer>
 </body>
-<script src="./main.js"></script>
-<script src="./menu.js"></script>
-<script src="./sayingtext.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/menu.js"></script>
 <script src="https://kit.fontawesome.com/66583b1d9a.js" crossorigin="anonymous"></script>
 </html>
