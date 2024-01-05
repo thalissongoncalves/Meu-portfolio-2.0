@@ -21,20 +21,38 @@ body {
     height: 100vh;
 }
 
-footer {
-    align-items: center;
-    background-color: transparent;
-    color: #8c8c8e;
-    display: flex;
-    font-size: 10px;
-    justify-content: space-between;
-    height: 25px;
-    margin-left: 320px;
-    margin-bottom: 20px;
-    width: 70.6%;
+@media screen and (max-width: 767px) {
+    /* Estilos para smartphones */
 }
 
-.aviso {
-    background-color: white;
-    text-align: center;
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Estilos para tablets */
+}
+
+@media screen and (min-width: 1024px) {
+    /* Estilos para desktops e laptops */
+    footer {
+        align-items: center;
+        background-color: transparent;
+        color: #8c8c8e;
+        display: flex;
+        font-size: 10px;
+        justify-content: space-between;
+        height: 25px;
+        margin-left: 320px;
+        margin-bottom: 20px;
+        width: 70.6%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Estilos para telas pequenas em geral */
+}
+
+@media screen and (min-width: 1200px) {
+    /* Estilos para telas grandes em geral */
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Estilos para telas de alta resolução (Retina) */
 }

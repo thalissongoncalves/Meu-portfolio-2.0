@@ -1,123 +1,286 @@
-.left-content {
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 18.7rem;
-    height: 100%;
-}
-
-.avatar {
-    border-radius: 50%;
-    height: 100px;
-    margin-bottom: 5px;
-    vertical-align: middle;
-    width: 100px;
-}
-
-.avatar-block {
-    align-items: center;
-    background-color: #24242F;
-    display: flex;
-    flex-direction: column;
-    height: 35vh;
-    justify-content: center;
-    width: 18.7em;
-}
-
-.avatar-block p {
-    color: #8c8c8e;
-    font-size: 14px;
-    margin: 3px;
-}
-
-.avatar-block-name {
-    color: white;
-    display: flex;
-    font-size: 18px;
-    text-decoration: none;
-    transition-duration: 0.5s;
-}
-
-.avatar-block-name:hover {
-    transition-duration: 0.5s;
-    color: #0ce353;
-}
-
-.avatar-block-name img {
-    margin-right: 10px;
-}
-
-.skills-tools-block {
-    padding: 10px 30px;
-}
-
-.skills-tools-block p {
-    color: #8c8c8e;
-    display: flex;
-    font-size: 14px;
-    line-height: 35px;
-}
-
-.skills-tools-block p img {
-    margin-right: 5px;
-}
-
-.skills-tools-block > h2 {
-    color: white;
-    font-size: 15px;
-    font-weight: 400;
-}
-
-.download-cv-btn {
-    background-color: transparent;
-    border: none;
-    color: #8c8c8e;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    padding: 20px 30px;
+@media screen and (max-width: 767px) {
+    /* Estilos para smartphones */
+    .left-content {
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+        display: none;
+        position: fixed;
+        width: 18.7rem;
+        height: 100%;
+    }
     
+    .avatar {
+        border-radius: 50%;
+        height: 100px;
+        margin-bottom: 5px;
+        vertical-align: middle;
+        width: 100px;
+    }
+    
+    .avatar-block {
+        align-items: center;
+        background-color: #24242F;
+        display: none;
+        flex-direction: column;
+        height: 35vh;
+        justify-content: center;
+        width: 18.7em;
+    }
+    
+    .avatar-block p {
+        color: #8c8c8e;
+        font-size: 14px;
+        margin: 3px;
+    }
+    
+    .avatar-block-name {
+        color: white;
+        display: flex;
+        font-size: 18px;
+        text-decoration: none;
+        transition-duration: 0.5s;
+    }
+    
+    .avatar-block-name:hover {
+        transition-duration: 0.5s;
+        color: #0ce353;
+    }
+    
+    .avatar-block-name img {
+        margin-right: 10px;
+    }
+    
+    .skills-tools-block {
+        padding: 10px 30px;
+    }
+    
+    .skills-tools-block p {
+        color: #8c8c8e;
+        display: flex;
+        font-size: 14px;
+        line-height: 35px;
+    }
+    
+    .skills-tools-block p img {
+        margin-right: 5px;
+    }
+    
+    .skills-tools-block > h2 {
+        color: white;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    
+    .download-cv-btn {
+        background-color: transparent;
+        border: none;
+        color: #8c8c8e;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        padding: 20px 30px;
+        
+    }
+    
+    .download-cv-btn a {
+        text-decoration: none;
+        color: #8c8c8e;
+    }
+    
+    #scrollable-content {
+        background-color: #20202A;
+        display: none;
+        height: 60%;
+        max-height: 100vh;
+        overflow-y: auto;
+        scrollbar-width: thin;
+    }
+    
+    #scrollable-content::-webkit-scrollbar {
+        width: 7px;
+    }
+    
+    #scrollable-content::-webkit-scrollbar-thumb {
+        background-color: #24242F;
+        border-radius: 4px;
+    }
+    
+    #social-block {
+        align-items: center;
+        background-color: #24242F;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 5%;
+        width: 300px;
+    }
+    
+    #social-block i {
+        color: #8c8c8e;
+        margin: 0 10px;
+    }
+    
+    hr {
+        justify-content: center;
+        margin: auto;
+        opacity: 0.2;
+        width: 80%;
+    }
+
+    .avatar-cell {
+        border-radius: 50px;
+        width: 50px;
+    }
+
+    .avatar-cell-btn {
+        background-color: transparent;
+        border: none;
+    }
+
+    .avatar-cell-container {
+        display: flex;
+        width: 100%;
+    }
 }
 
-.download-cv-btn a {
-    text-decoration: none;
-    color: #8c8c8e;
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Estilos para tablets */
 }
 
-#scrollable-content {
-    background-color: #20202A;
-    height: 60%;
-    max-height: 100vh;
-    overflow-y: auto;
-    scrollbar-width: thin;
+@media screen and (min-width: 1024px) {
+    /* Estilos para desktops e laptops */
+    .left-content {
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        width: 18.7rem;
+        height: 100%;
+    }
+    
+    .avatar {
+        border-radius: 50%;
+        height: 100px;
+        margin-bottom: 5px;
+        vertical-align: middle;
+        width: 100px;
+    }
+    
+    .avatar-block {
+        align-items: center;
+        background-color: #24242F;
+        display: flex;
+        flex-direction: column;
+        height: 35vh;
+        justify-content: center;
+        width: 18.7em;
+    }
+    
+    .avatar-block p {
+        color: #8c8c8e;
+        font-size: 14px;
+        margin: 3px;
+    }
+    
+    .avatar-block-name {
+        color: white;
+        display: flex;
+        font-size: 18px;
+        text-decoration: none;
+        transition-duration: 0.5s;
+    }
+    
+    .avatar-block-name:hover {
+        transition-duration: 0.5s;
+        color: #0ce353;
+    }
+    
+    .avatar-block-name img {
+        margin-right: 10px;
+    }
+    
+    .skills-tools-block {
+        padding: 10px 30px;
+    }
+    
+    .skills-tools-block p {
+        color: #8c8c8e;
+        display: flex;
+        font-size: 14px;
+        line-height: 35px;
+    }
+    
+    .skills-tools-block p img {
+        margin-right: 5px;
+    }
+    
+    .skills-tools-block > h2 {
+        color: white;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    
+    .download-cv-btn {
+        background-color: transparent;
+        border: none;
+        color: #8c8c8e;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        padding: 20px 30px;
+        
+    }
+    
+    .download-cv-btn a {
+        text-decoration: none;
+        color: #8c8c8e;
+    }
+    
+    #scrollable-content {
+        background-color: #20202A;
+        height: 60%;
+        max-height: 100vh;
+        overflow-y: auto;
+        scrollbar-width: thin;
+    }
+    
+    #scrollable-content::-webkit-scrollbar {
+        width: 7px;
+    }
+    
+    #scrollable-content::-webkit-scrollbar-thumb {
+        background-color: #24242F;
+        border-radius: 4px;
+    }
+    
+    #social-block {
+        align-items: center;
+        background-color: #24242F;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 5%;
+        width: 300px;
+    }
+    
+    #social-block i {
+        color: #8c8c8e;
+        margin: 0 10px;
+    }
+    
+    hr {
+        justify-content: center;
+        margin: auto;
+        opacity: 0.2;
+        width: 80%;
+    }
 }
 
-#scrollable-content::-webkit-scrollbar {
-    width: 7px;
+@media screen and (max-width: 480px) {
+    /* Estilos para telas pequenas em geral */
 }
 
-#scrollable-content::-webkit-scrollbar-thumb {
-    background-color: #24242F;
-    border-radius: 4px;
+@media screen and (min-width: 1200px) {
+    /* Estilos para telas grandes em geral */
 }
 
-#social-block {
-    align-items: center;
-    background-color: #24242F;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 5%;
-    width: 300px;
-}
-
-#social-block i {
-    color: #8c8c8e;
-    margin: 0 10px;
-}
-
-hr {
-    justify-content: center;
-    margin: auto;
-    opacity: 0.2;
-    width: 80%;
+@media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Estilos para telas de alta resolução (Retina) */
 }
