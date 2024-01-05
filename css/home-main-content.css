@@ -147,7 +147,7 @@
 .main-infos {
     display: flex;
     justify-content: space-between;
-    margin: 0 40px;
+    margin: 0 auto;
     width: 100%;
 }
 
