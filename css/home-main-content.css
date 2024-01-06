@@ -306,6 +306,10 @@
 
 @media screen and (min-width: 1024px) {
     /* Estilos para desktops e laptops */
+    .avatar-cell-container {
+        display: none;
+    }
+
     .main-block {
         position: relative;
         height: 100%;
