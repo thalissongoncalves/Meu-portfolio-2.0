@@ -128,6 +128,7 @@
 
     .avatar-cell {
         border-radius: 50px;
+        margin: 10px 20px;
         width: 50px;
     }
 
@@ -137,8 +138,17 @@
     }
 
     .avatar-cell-container {
+        background-color: #24242F;
         display: flex;
         width: 100%;
+    }
+
+    .menu-right-btn {
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        right: 20px;
+        top: 30px;
     }
 }
 
