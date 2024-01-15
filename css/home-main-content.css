@@ -1,25 +1,15 @@
 
 
 @media screen and (max-width: 767px) {
+
     .main-block {
-        display: block;
         position: relative;
         height: 100%;
         margin-left: 300px;
         margin-right: 100px;
-        overflow-y: auto;
+        overflow-y: hidden;
         overflow-x: hidden;
-        scrollbar-width: thin;
         max-width: 100%;
-    }
-    
-    .main-block::-webkit-scrollbar {
-        width: 0px;
-    }
-    
-    .main-block::-webkit-scrollbar-thumb {
-        background-color: #2c2c389a;
-        border-radius: 4px;
     }
     
     .main-block::before {
@@ -28,10 +18,10 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 34rem;
+        height: 100%;
         background-image: url("../images/bedroom-vibe.gif");
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: 120%;
         opacity: 0.3;
         z-index: -1;
     }
@@ -43,174 +33,48 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 34rem;
+        height: 100%;
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
         pointer-events: none;
         z-index: 0;
     }
-    
-    .main-message {
-        /* background-image: url("./images/bedroom-vibe.gif"); */
-        background-color: #2c2c389a;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: center;
-        border-radius: 5px;
-        font-family: "Poppins-bold";
-        position: relative;
-        z-index: 1;
-        height: 25rem;
-        margin-top: 50px;
-        margin-bottom: 25px;
-        margin-left: 30px;
-        margin-right: 30px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
-        line-height: 40px;
-    }
-    
-    
-    /* .main-message::after {
-        border-radius: 4.3px;
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 20rem;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-        pointer-events: none;
-        z-index: 0;
-    } */
-    
-    .main-message > h1 {
-        color: #0ce354e5;
-        font-family: 'Poppins-regular';
-        font-size: 40px;
-        font-weight: bold;
-        margin-bottom: 20px;
-        margin-top: 0.5rem;
-        text-transform: uppercase;
-        text-align: center;
-        z-index: inherit;
-    }
-    
-    .main-message > h2 {
-        color: rgba(255, 255, 255, 0.834);
-        font-family: 'Poppins-regular';
-        font-size: 20px;
-        font-weight: 200;
-        margin-top: 2rem;
-        z-index: inherit;
-    }
-    
-    .main-message-saying {
-        color: rgba(255, 255, 255, 0.834);
-        font-size: 1.1rem;
-        font-weight: 600;
-        letter-spacing: 3px;
-        /* margin-top: 20px; */
-        overflow: hidden;
-        text-align: center;
-        width: 90%;
-        z-index: inherit;
-    }
-    
-    .button-mode {
-        display: flex;
-        /* margin: 15px auto; */
-        position: absolute;
-        bottom: 40px;
-    }
-    
-    .button-mode > button > a {
-        background-color: #0ce354c7;
-        border: none;
-        border-radius: 5px;
-        color: rgba(255, 255, 255, 0.834);
-        display: flex;
-        flex-direction: column;
-        font-family: "Poppins-bold";
-        font-size: 12px;
-        line-height: 25px;
-        padding: 5px 15px;
-        margin: 0 20px;
-        text-decoration: none;
-        z-index: 3;
-    }
-    
-    .button-mode > button > a > span {
-        margin-bottom: 0;
-    }
-    
-    .button-mode > button {
-        background-color: transparent;
-        border: none;
-    }
-    
-    .main-infos {
-        display: inline-flex;
-        justify-content: space-between;
-        margin: 0 40px;
-        width: 92%;
-    }
-    
-    .main-infos > p {
-        align-items: center;
-        color: white;
-        margin: 5px;
-        font-size: 13px;
-        font-weight: 400;
-    }
-    
-    .main-infos-numbers {
-        color: #0ce353;
-        font-size: 25px;
-        font-weight: 600;
-        margin-right: 10px;
-    }
-    
-    .main-projects-title {
+.main-projects-title {
         color: white;
         font-size: 20px;
         font-weight: 600;
-        margin-top: 30px;
+        margin-top: 15px;
         margin-left: 30px;
     }
     
     .main-projects-cards {
-        display: flex;
-        flex-direction: row;
-        height: 350px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* flex-wrap: wrap; */
         margin-left: 20px;
         margin-right: 20px;
-        margin-bottom: 100px;
+        /* margin-bottom: 100px; */
     }
-    
+
     .main-cards {
         background-color: #2c2c389a;
         border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
         padding: 30px;
-        height: 100%;
+        height: 80%; 
         margin: 10px;
-        width: 50%;
+        /* width: 40%; */
     }
     
-    .main-cards-title h1 {
+    .main-cards-title {
         color: white;
-        font-size: 20px;
+        font-size: 17px;
         font-weight: 600;
+        margin-bottom: 10px;
         width: 100%;
     }
     
     .main-cards-paragraph {
-        color: rgb(141, 141, 141);
-        font-size: 14px;
+        color: rgb(255, 255, 255);
+        font-size: 12px;
         font-weight: 400;
         height: 130px;
         width: 100%;
@@ -227,42 +91,13 @@
         /* z-index: 3; */
     }
     
-    .project-one {
-        margin-left: 10px;
-    }
-    
-    .project-two {
-        margin-right: 10px;
-    }
-    
-    #main-recommendations {
-        display: flex;
-        flex-direction: row;
-        height: 320px;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-bottom: 100px;
-    }
-    
     .title-recommendations {
         color: white;
         font-size: 20px;
         font-weight: 600;
-        margin-top: 30px;
-        margin-bottom: 10px;
+        margin-top: 10px;
+        /* margin-bottom: 10px; */
         margin-left: 30px;
-    }
-    
-    #main-recommendations div {
-        background-color: #2c2c389a;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        padding: 30px;
-        height: 100%;
-        margin: 10px;
-        width: 50%;
     }
     
     .title-people-recommendations {
@@ -272,15 +107,15 @@
     }
     
     .enterprise-recommendations {
-        color: rgb(224, 224, 224);
-        font-size: 12px;
+        color: rgba(224, 224, 224, 0.622);
+        font-size: 10px;
         font-weight: 400;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     
     .comment-recommendations {
         color: white;
-        font-size: 15px;
+        font-size: 12px;
         font-weight: 400;
         margin-bottom: 20px;
     }
@@ -288,16 +123,18 @@
     .stars-block {
         background-color: #1E1E28;
         border-radius: 15px;
+        bottom: 0;
         display: flex;
         height: 28px;
         justify-content: center;
+        position: relative;
         width: 110px;
     }
     
     .avatar-recommendations {
         border-radius: 50px;
         margin-bottom: 10px;
-        width: 100px;
+        width: 60px;
     }
 }
 
@@ -316,19 +153,9 @@
         height: 100%;
         margin-left: 300px;
         margin-right: 100px;
-        overflow-y: auto;
+        overflow-y: hidden;
         overflow-x: hidden;
-        scrollbar-width: thin;
         max-width: 100%;
-    }
-    
-    .main-block::-webkit-scrollbar {
-        width: 0px;
-    }
-    
-    .main-block::-webkit-scrollbar-thumb {
-        background-color: #2c2c389a;
-        border-radius: 4px;
     }
     
     .main-block::before {
@@ -340,7 +167,7 @@
         height: 100%;
         background-image: url("../images/bedroom-vibe.gif");
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: 120%;
         opacity: 0.3;
         z-index: -1;
     }
@@ -358,9 +185,9 @@
         z-index: 0;
     }
     
-    .main-message {
+    /* .main-message {
         /* background-image: url("./images/bedroom-vibe.gif"); */
-        background-color: #2c2c389a;
+        /* background-color: #2c2c389a;
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: center;
@@ -377,8 +204,8 @@
         align-items: center;
         flex-direction: column;
         box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
-        line-height: 40px;
-    }
+        line-height: 40px; */
+    /* } */
     
     
     /* .main-message::after {
@@ -394,7 +221,7 @@
         z-index: 0;
     } */
     
-    .main-message > h1 {
+    /* .main-message > h1 {
         color: #0ce354e5;
         font-family: 'Poppins-regular';
         font-size: 40px;
@@ -421,20 +248,20 @@
         font-weight: 600;
         letter-spacing: 3px;
         /* margin-top: 20px; */
-        overflow: hidden;
+        /* overflow: hidden;
         text-align: center;
         width: 90%;
-        z-index: inherit;
-    }
+        z-index: inherit; */
+    /* } */ 
     
-    .button-mode {
+    /* .button-mode {
         display: flex;
         /* margin: 15px auto; */
-        position: absolute;
+        /* position: absolute;
         bottom: 40px;
-    }
+    } */
     
-    .button-mode > button > a {
+    /* .button-mode > button > a {
         background-color: #0ce354c7;
         border: none;
         border-radius: 5px;
@@ -448,18 +275,18 @@
         margin: 0 20px;
         text-decoration: none;
         z-index: 3;
-    }
+    } */
     
-    .button-mode > button > a > span {
+    /* .button-mode > button > a > span {
         margin-bottom: 0;
-    }
+    } */
     
-    .button-mode > button {
+    /* .button-mode > button {
         background-color: transparent;
         border: none;
-    }
-    
-    .main-infos {
+    } */
+
+    /* .main-infos {
         display: inline-flex;
         justify-content: space-between;
         margin: 0 40px;
@@ -480,7 +307,7 @@
         font-size: 25px;
         font-weight: 600;
         margin-right: 10px;
-    }
+    } */
     
     .main-projects-title {
         color: white;
@@ -491,49 +318,34 @@
     }
     
     .main-projects-cards {
-        /* display: flex;
-        flex-direction: row; */
-        height: 90vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* flex-wrap: wrap; */
         margin-left: 20px;
         margin-right: 20px;
         /* margin-bottom: 100px; */
-        /* overflow-y: auto; */
-        overflow-x: hidden;
-        scrollbar-width: thin;
-        width: 500px;
     }
 
-    .main-projects-cards::-webkit-scrollbar {
-        width: 10px;
-    }
-    
-    .main-projects-cards::-webkit-scrollbar-thumb {
-        background-color: #0ce35490;
-        border-radius: 4px;
-    }
-    
     .main-cards {
         background-color: #2c2c389a;
         border-radius: 5px;
-        /* display: flex;
-        flex-direction: column; */
-        justify-content: left;
         padding: 30px;
-        /* height: 100%; */
+        height: 80%; 
         margin: 10px;
-        width: 40%;
+        /* width: 40%; */
     }
     
-    .main-cards-title h1 {
+    .main-cards-title {
         color: white;
-        font-size: 20px;
+        font-size: 17px;
         font-weight: 600;
+        margin-bottom: 10px;
         width: 100%;
     }
     
     .main-cards-paragraph {
-        color: rgb(141, 141, 141);
-        font-size: 14px;
+        color: rgb(255, 255, 255);
+        font-size: 12px;
         font-weight: 400;
         height: 130px;
         width: 100%;
@@ -550,55 +362,13 @@
         /* z-index: 3; */
     }
     
-    .project-one {
-        margin-left: 10px;
-        width: 84%;
-    }
-    
-    .project-two {
-        margin-right: 10px;
-        width: 84%;
-    }
-    
-    #main-recommendations {
-        height: 90vh;
-        margin-left: 20px;
-        margin-right: 20px;
-        /* margin-bottom: 100px; */
-        /* overflow-y: auto; */
-        overflow-x: hidden;
-        scrollbar-width: thin;
-        width: 500px;
-    }
-
-    .main-recommendations::-webkit-scrollbar {
-        width: 10px;
-    }
-    
-    .main-recommendations::-webkit-scrollbar-thumb {
-        background-color: #0ce35490;
-        border-radius: 4px;
-    }
-    
     .title-recommendations {
         color: white;
         font-size: 20px;
         font-weight: 600;
-        margin-top: 30px;
-        margin-bottom: 10px;
+        margin-top: 10px;
+        /* margin-bottom: 10px; */
         margin-left: 30px;
-    }
-    
-    #main-recommendations div {
-        background-color: #2c2c389a;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        padding: 30px;
-        /* height: 100%; */
-        margin: 10px;
-        /* width: 50%; */
     }
     
     .title-people-recommendations {
@@ -608,15 +378,15 @@
     }
     
     .enterprise-recommendations {
-        color: rgb(224, 224, 224);
-        font-size: 12px;
+        color: rgba(224, 224, 224, 0.622);
+        font-size: 10px;
         font-weight: 400;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     
     .comment-recommendations {
         color: white;
-        font-size: 15px;
+        font-size: 12px;
         font-weight: 400;
         margin-bottom: 20px;
     }
@@ -624,16 +394,22 @@
     .stars-block {
         background-color: #1E1E28;
         border-radius: 15px;
+        bottom: 0;
         display: flex;
         height: 28px;
         justify-content: center;
+        position: relative;
         width: 110px;
     }
     
     .avatar-recommendations {
         border-radius: 50px;
         margin-bottom: 10px;
-        width: 100px;
+        width: 60px;
+    }
+
+    .arrow-down {
+        display: none;
     }
 }
 

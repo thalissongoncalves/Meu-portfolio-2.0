@@ -3,6 +3,14 @@
     #menu-block {
         display: none;
     }
+
+    .menu-right-btn {
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        right: 20px;
+        top: 30px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {

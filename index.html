@@ -40,6 +40,12 @@
                 </li>
                 <li class="item-menu">
                     <a href="#">
+                        <span class="icon"><i class="fa-solid fa-certificate" style="color: white"></i></span>
+                        <span class="txt-link">Certificações</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
                         <span class="icon"><i class="fa-solid fa-user-tie" style="color: white"></i></span>
                         <span class="txt-link">Sobre mim</span>
                     </a>
@@ -57,9 +63,10 @@
     <!-- Botão do avatar versão celular -->
     <div class="avatar-cell-container">
         <button type="button" class="avatar-cell-btn">
-            <a href="#">
-                <img src="./images/meu-avatar-2.jpeg" alt="avatar" class="avatar-cell"/>
+            <a href="#" style="text-decoration: none;">
+                <img src="./images/meu-avatar-3.JPG" alt="avatar" class="avatar-cell"/>
             </a>
+            <img src="./images/arrow-down.png" alt="seta pra baixo" class="arrow-down" style="width: 10px">
         </button>
         <button class="menu-right-btn" type="menu">
             <a href="#">
@@ -67,13 +74,14 @@
             </a>
         </button>
     </div>
+    
 
     <!-- Informações na lateral esquerda -->
     <section class="left-content">
 
         <!-- Foto/Avatar -->
         <div class="avatar-block">
-            <img src="./images/meu-avatar-2.jpeg" alt="avatar" class="avatar">
+            <img src="./images/meu-avatar-3.JPG" alt="avatar" class="avatar">
             <h1><a href="#" class="avatar-block-name"> Thálisson Gonçalves</a></h1>
             <p>Desenvolvedor Full-Stack</p>
             <img width="32" height="32" src="https://img.icons8.com/color/48/brazil.png" alt="brazil"/>
@@ -213,32 +221,25 @@
             <p><span class="main-infos-numbers">04</span>Experiências de trabalho</p>
         </div> -->
 
-        <!-- Blocos de principais projetos -->
-        <h2 class="main-projects-title">Principais Projetos</h2>
-
-        <div>
+            <!-- Blocos de principais projetos -->
+            <h2 class="main-projects-title">Principais Projetos</h2>
             <div class="main-projects-cards">
-                <div class="main-cards project-one">
-                    <img src="./images/sistema-solar-project.png" style="width: 300px; margin-bottom: 15px;" />
-                    <div class="main-cards-title"><h1>Integração de sistemas</h1></div>
-                    <div class="main-cards-paragraph" style="margin-top: 15px;"><p>Integrei Bitrix CRM, Python, Google Sheets, Google Cloud e Looker Studio para análise eficiente de dados de projetos. API Bitrix em Python, manipulação de dados na planilha do Google Sheets com Google Cloud, fonte primária no Looker Studio.</p></div>
-                    <div><button class="main-cards-btn">SAIBA MAIS <i class="fa-solid fa-arrow-right" style="color: rgba(255, 255, 255, 0.834);"></i></button></div>
+                <div class="main-cards">
+                    <img src="./images/sistema-solar-project.png" style="width: 200px; margin-bottom: 15px;" />
+                    <h1 class="main-cards-title">Integração de sistemas</h1>
+                    <p class="main-cards-paragraph">Integrei Bitrix CRM, Python, Google Sheets, Google Cloud e Looker Studio para análise eficiente de dados de projetos. API Bitrix em Python, manipulação de dados na planilha do Google Sheets com Google Cloud, fonte primária no Looker Studio.</p>
+                    <button class="main-cards-btn">SAIBA MAIS <i class="fa-solid fa-arrow-right" style="color: rgba(255, 255, 255, 0.834);"></i></button>
                 </div>
-                <div class="main-cards project-two">
-                    <img src="./images/Pokedex-project.png" style="width: 300px; margin-bottom: 15px;" />
-                    <div class="main-cards-title"><h1>Pág. Inicial para empresas</h1></div>
-                    <div class="main-cards-paragraph" style="margin-top: 15px;"><p>Criei uma página de links aprimorada para empresas, semelhante ao Linktree, com integração via API ao Bitrix CRM. Isso permite aos usuários abrir formulários na página para solicitar assistência técnica ao departamento de TI e outras necessidades.</p></div>
-                    <div><button class="main-cards-btn">SAIBA MAIS <i class="fa-solid fa-arrow-right" style="color: rgba(255, 255, 255, 0.834);"></i></button></div>
+                <div class="main-cards">
+                    <img src="./images/Pokedex-project.png" style="width: 200px; margin-bottom: 15px;" />
+                    <h1 class="main-cards-title">Pág. Inicial para empresas</h1>
+                    <p class="main-cards-paragraph">Criei uma página de links aprimorada para empresas, semelhante ao Linktree, com integração via API ao Bitrix CRM. Isso permite aos usuários abrir formulários na página para solicitar assistência técnica ao departamento de TI e outras necessidades.</p>
+                    <button class="main-cards-btn">SAIBA MAIS <i class="fa-solid fa-arrow-right" style="color: rgba(255, 255, 255, 0.834);"></i></button>
                 </div>
             </div>
-        </div>
-
-        <!-- Blocos de recomendações -->
-        <div>
-
-            <h1 class="title-recommendations">Recomendações</h1>
-            <div id="main-recommendations">
-                <div>
+            <h2 class="title-recommendations">Recomendações</h2>
+            <div class="main-projects-cards">
+                <div class="main-cards">
                     <img src="./images/Alice-foto.jpeg" alt="avatar" class="avatar-recommendations">
                     <h1 class="title-people-recommendations">Alice Eugenio</h1>
                     <h2 class="enterprise-recommendations">Business Development Center Representative | Grupo EROS</h2>
@@ -253,7 +254,7 @@
                         </li>
                     </ul>
                 </div>
-                <div>
+                <div class="main-cards">
                     <img src="./images/Rodrigo-foto.jpeg" alt="avatar" class="avatar-recommendations">
                     <h1 class="title-people-recommendations">Rodrigo Milani</h1>
                     <h2 class="enterprise-recommendations">Coordenador Departamento de T.I. | Grupo EROS</h2>
@@ -270,14 +271,7 @@
                 </div>
             </div>
 
-        </div>
     </main>
-
-    <!-- Rodapé -->
-    <footer>
-        <p>© 2024 Todos os direitos reservados.</p>
-        <p>E-mail: thalissongsilva70@gmail.com</p>
-    </footer>
 </body>
 <script src="./js/main.js"></script>
 <script src="./js/menu.js"></script>

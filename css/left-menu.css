@@ -128,13 +128,24 @@
 
     .avatar-cell {
         border-radius: 50px;
-        margin: 10px 20px;
+        margin-bottom: 5px;
+        margin-top: 10px;
         width: 50px;
     }
 
     .avatar-cell-btn {
+        align-items: center;
         background-color: transparent;
         border: none;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        width: 50px;
+    }
+
+    .arrow-down {
+        opacity: 0.8;
     }
 
     .avatar-cell-container {
@@ -143,13 +154,6 @@
         width: 100%;
     }
 
-    .menu-right-btn {
-        background-color: transparent;
-        border: none;
-        position: absolute;
-        right: 20px;
-        top: 30px;
-    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
