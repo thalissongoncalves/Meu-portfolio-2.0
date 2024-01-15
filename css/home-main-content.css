@@ -61,7 +61,7 @@
         background-color: #2c2c389a;
         border-radius: 5px;
         padding: 30px;
-        height: 80%; 
+        height: 70%;
         margin: 10px;
         /* width: 40%; */
     }
@@ -97,7 +97,7 @@
         color: white;
         font-size: 20px;
         font-weight: 600;
-        margin-top: 10px;
+        /* margin-top: 100px; */
         /* margin-bottom: 10px; */
         margin-left: 30px;
     }
@@ -322,6 +322,7 @@
     .main-projects-cards {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        height: 40%;
         /* flex-wrap: wrap; */
         margin-left: 20px;
         margin-right: 20px;
@@ -329,10 +330,10 @@
     }
 
     .main-cards {
-        background-color: #2c2c389a;
+        background-color: #2c2c38c9;
         border-radius: 5px;
         padding: 30px;
-        height: 80%; 
+        height: 70%;
         margin: 10px;
         /* width: 40%; */
     }
@@ -349,7 +350,8 @@
         color: rgb(255, 255, 255);
         font-size: 12px;
         font-weight: 400;
-        height: 130px;
+        /* height: 130px; */
+        margin-bottom: 15px;
         width: 100%;
     }
     
@@ -368,7 +370,7 @@
         color: white;
         font-size: 20px;
         font-weight: 600;
-        margin-top: 10px;
+        margin-top: 25px;
         /* margin-bottom: 10px; */
         margin-left: 30px;
     }
@@ -411,6 +413,10 @@
     }
 
     .arrow-down {
+        display: none;
+    }
+
+    .avatar-block-container-close {
         display: none;
     }
 }
