@@ -140,7 +140,7 @@
     .avatar-cell {
         border-radius: 50px;
         margin-top: 10px;
-        width: 50px;
+        width: 40px;
     }
 
     .avatar-cell-btn {
@@ -156,6 +156,7 @@
 
     .arrow-down {
         opacity: 0.8;
+        margin-bottom: 2px;
     }
 
     .avatar-cell-container {
