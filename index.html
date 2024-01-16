@@ -24,6 +24,14 @@
                 </button>
             </div>
 
+            <div class="menu-btn-block-mobile">
+                <button class="menu-btn-mobile" type="menu">
+                    <a href="#">
+                        <i class="fa-solid fa-circle-xmark" id="btn-exp" style="color: #8c8c8e;"></i>
+                    </a>
+                </button>
+            </div>
+
             <!-- Todas as opções do menu -->
             <ul class="expandir">
                 <li class="item-menu ativo">
@@ -232,13 +240,13 @@
             <h2 class="main-projects-title">Principais Projetos</h2>
             <div class="main-projects-cards">
                 <div class="main-cards">
-                    <img src="./images/sistema-solar-project.png" style="max-width: 200px; width: 50%; margin-bottom: 15px;" />
+                    <img src="./images/sistema-solar-project.png" style="width: 200px; margin-bottom: 15px;" />
                     <h1 class="main-cards-title">Integração de sistemas</h1>
                     <p class="main-cards-paragraph">Integrei Bitrix CRM, Python, Google Sheets, Google Cloud e Looker Studio para análise eficiente de dados de projetos. API Bitrix em Python, manipulação de dados na planilha do Google Sheets com Google Cloud, fonte primária no Looker Studio.</p>
                     <button class="main-cards-btn">SAIBA MAIS <i class="fa-solid fa-arrow-right" style="color: rgba(255, 255, 255, 0.834);"></i></button>
                 </div>
                 <div class="main-cards">
-                    <img src="./images/Pokedex-project.png" style="max-width: 200px; width: 50%; margin-bottom: 15px;" />
+                    <img src="./images/Pokedex-project.png" style="width: 200px; margin-bottom: 15px;" />
                     <h1 class="main-cards-title">Pág. Inicial para empresas</h1>
                     <p class="main-cards-paragraph">Criei uma página de links aprimorada para empresas, semelhante ao Linktree, com integração via API ao Bitrix CRM. Isso permite aos usuários abrir formulários na página para solicitar assistência técnica ao departamento de TI e outras necessidades.</p>
                     <button class="main-cards-btn">SAIBA MAIS <i class="fa-solid fa-arrow-right" style="color: rgba(255, 255, 255, 0.834);"></i></button>
@@ -247,26 +255,8 @@
             <h2 class="title-recommendations">Recomendações</h2>
             <div class="main-projects-cards">
                 <div class="main-cards">
-                    <img src="./images/Alice-foto.jpeg" alt="avatar" class="avatar-recommendations">
-                    <h1 class="title-people-recommendations">Alice Eugenio</h1>
-                    <h2 class="enterprise-recommendations">Business Development Center Representative | Grupo EROS</h2>
-                    <p class="comment-recommendations">Profissional com habilidades em Programação e Análise de Dados, sempre atendendo as demandas e suportes solicitados na empresa, amplo conhecimento em informática e tecnologias, responsável e pró-ativo!</p>
-                    <ul class="stars-block">
-                        <li>
-                            <i class="fas fa-star" style="color: #0ce353; font-size: 10px;"></i>
-                            <i class="fas fa-star" style="color: #0ce353; font-size: 10px;"></i>
-                            <i class="fas fa-star" style="color: #0ce353; font-size: 10px;"></i>
-                            <i class="fas fa-star" style="color: #0ce353; font-size: 10px;"></i>
-                            <i class="fas fa-star" style="color: #0ce353; font-size: 10px;"></i>
-                        </li>
-                    </ul>
-                </div>
-                <div class="main-cards">
-                    <img src="./images/Rodrigo-foto.jpeg" alt="avatar" class="avatar-recommendations">
-                    <h1 class="title-people-recommendations">Rodrigo Milani</h1>
-                    <h2 class="enterprise-recommendations">Coordenador Departamento de T.I. | Grupo EROS</h2>
-                    <p class="comment-recommendations">Profissional com amplo conhecimento em HTML, Wordpress, Excel, Python. Grande experiência com informática em geral. Adapta-se facilmente a qualquer ambiente e não teme novos desafios. Pro-ativo, responsável e prestativo.</p>
-                    <div class="stars-container">
+                    <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-between;">
+                        <img src="./images/Alice-foto.jpeg" alt="avatar" class="avatar-recommendations">
                         <ul class="stars-block">
                             <li>
                                 <i class="fas fa-star" style="color: #0ce353; font-size: 10px;"></i>
@@ -277,14 +267,35 @@
                             </li>
                         </ul>
                     </div>
+                    <h1 class="title-people-recommendations">Alice Eugenio</h1>
+                    <h2 class="enterprise-recommendations">Business Development Center Representative | Grupo EROS</h2>
+                    <p class="comment-recommendations">Profissional com habilidades em Programação e Análise de Dados, sempre atendendo as demandas e suportes solicitados na empresa, amplo conhecimento em informática e tecnologias, responsável e pró-ativo!</p>
+                </div>
+                <div class="main-cards">
+                    <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-between;">
+                        <img src="./images/Rodrigo-foto.jpeg" alt="avatar" class="avatar-recommendations">
+                        <ul class="stars-block">
+                            <li>
+                                <i class="fas fa-star" style="color: #0ce353; font-size: 10px;"></i>
+                                <i class="fas fa-star" style="color: #0ce353; font-size: 10px;"></i>
+                                <i class="fas fa-star" style="color: #0ce353; font-size: 10px;"></i>
+                                <i class="fas fa-star" style="color: #0ce353; font-size: 10px;"></i>
+                                <i class="fas fa-star" style="color: #0ce353; font-size: 10px;"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <h1 class="title-people-recommendations">Rodrigo Milani</h1>
+                    <h2 class="enterprise-recommendations">Coordenador Departamento de T.I. | Grupo EROS</h2>
+                    <p class="comment-recommendations">Profissional com amplo conhecimento em HTML, Wordpress, Excel, Python. Grande experiência com informática em geral. Adapta-se facilmente a qualquer ambiente e não teme novos desafios. Pro-ativo, responsável e prestativo.</p>
                 </div>
             </div>
 
     </main>
 </body>
-<script src="./js/left-menu.js"></script>
+<script src="./js/left-menu-mobile.js"></script>
 <script src="./js/main.js"></script>
-<script src="./js/menu.js"></script>
+<script src="./js/right-menu.js"></script>
+<script src="./js/right-menu-mobile.js"></script>
 <script src="./js/sayingtext.js"></script>
 <script src="https://kit.fontawesome.com/66583b1d9a.js" crossorigin="anonymous"></script>
 </html>
