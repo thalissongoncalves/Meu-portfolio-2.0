@@ -188,6 +188,10 @@
         margin-left: 33px;
         font-size: 20px;
     }
+
+    .menu-btn-block-mobile {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 480px) {

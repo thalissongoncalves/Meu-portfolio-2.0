@@ -7,11 +7,10 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/left-menu.css">
     <link rel="stylesheet" href="./css/right-menu.css">
-    <link rel="stylesheet" href="./css/project-main-content.css">
+    <link rel="stylesheet" href="./css/home-main-content.css">
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 </head>
 <body>
-
     <!-- Menu da lateral direita -->
     <header>
         <nav id="menu-block">
@@ -25,18 +24,33 @@
                 </button>
             </div>
 
+            <!-- Botão de close no menu mobile -->
+            <div class="menu-btn-block-mobile">
+                <button class="menu-btn-mobile" type="menu">
+                    <a href="#">
+                        <img src="./images/btn-right-menu-close.png" id="btn-exp" style="width: 30px;"/>
+                    </a>
+                </button>
+            </div>
+
             <!-- Todas as opções do menu -->
             <ul class="expandir">
-                <li class="item-menu ativo">
-                    <a href="index.html">
+                <li class="item-menu">
+                    <a href="./index.html">
                         <span class="icon"><i class="fa-solid fa-house" style="color: white"></i></span>
                         <span class="txt-link">Home</span>
                     </a>
                 </li>
-                <li class="item-menu">
-                    <a href="projects.html">
+                <li class="item-menu ativo">
+                    <a href="./projects.html">
                         <span class="icon"><i class="fa-solid fa-diagram-project" style="color: white"></i></span>
                         <span class="txt-link">Projetos</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-certificate" style="color: white"></i></span>
+                        <span class="txt-link">Certificações</span>
                     </a>
                 </li>
                 <li class="item-menu">
@@ -55,12 +69,35 @@
         </nav>
     </header>
 
+    <!-- Botão do avatar versão celular -->
+    <div class="avatar-cell-container">
+        <button type="button" class="avatar-cell-btn">
+            <a href="#" style="text-decoration: none;">
+                <img src="./images/meu-avatar-3.jpg" alt="avatar" class="avatar-cell"/>
+                <img src="./images/arrow-down.png" alt="seta pra baixo" class="arrow-down" style="width: 10px">
+            </a>
+        </button>
+        <button class="menu-right-btn" type="menu">
+            <a href="#">
+                <i class="fa-solid fa-bars fa-2xl" id="btn-exp" style="color: white;"></i>
+            </a>
+        </button>
+    </div>
+    
+
     <!-- Informações na lateral esquerda -->
     <section class="left-content">
 
         <!-- Foto/Avatar -->
         <div class="avatar-block">
-            <img src="./images/meu-avatar-2.jpeg" alt="avatar" class="avatar">
+            <div class="avatar-block-container-close">
+                <button class="avatar-block-close-btn">
+                    <a src="#">
+                        <i class="fa-solid fa-xmark" style="color: #8c8c8e;"></i>
+                    </a>
+                </button>
+            </div>
+            <img src="./images/meu-avatar-3.jpg" alt="avatar" class="avatar">
             <h1><a href="#" class="avatar-block-name"> Thálisson Gonçalves</a></h1>
             <p>Desenvolvedor Full-Stack</p>
             <img width="32" height="32" src="https://img.icons8.com/color/48/brazil.png" alt="brazil"/>
@@ -178,21 +215,14 @@
         
     </section>
 
-    <!-- Conteúdo da página PROJECT -->
-    <main id="project" class="main-block">
-        <ul>
-            <li>Principais Projetos</li>
-            <li></li>
-        </ul>
-    </main>
+    <!-- Conteúdo da página HOME -->
+    <main id="home" class="main-block">
 
-    <!-- Rodapé -->
-    <footer>
-        <p>© 2024 Todos os direitos reservados.</p>
-        <p>E-mail: thalissongsilva70@gmail.com</p>
-    </footer>
+    </main>
 </body>
+<script src="./js/left-menu-mobile.js"></script>
 <script src="./js/main.js"></script>
-<script src="./js/menu.js"></script>
+<script src="./js/right-menu.js"></script>
+<script src="./js/right-menu-mobile.js"></script>
 <script src="https://kit.fontawesome.com/66583b1d9a.js" crossorigin="anonymous"></script>
 </html>
