@@ -176,49 +176,9 @@
     .left-content {
         box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
         position: fixed;
+        right: 0;
         width: 18.7rem;
         height: 100%;
-    }
-    
-    .avatar {
-        border-radius: 50%;
-        height: 100px;
-        margin-bottom: 5px;
-        vertical-align: middle;
-        width: 100px;
-    }
-    
-    .avatar-block {
-        align-items: center;
-        background-color: #24242F;
-        display: flex;
-        flex-direction: column;
-        height: 35vh;
-        justify-content: center;
-        width: 18.7em;
-    }
-    
-    .avatar-block p {
-        color: #8c8c8e;
-        font-size: 14px;
-        margin: 3px;
-    }
-    
-    .avatar-block-name {
-        color: white;
-        display: flex;
-        font-size: 18px;
-        text-decoration: none;
-        transition-duration: 0.5s;
-    }
-    
-    .avatar-block-name:hover {
-        transition-duration: 0.5s;
-        color: #0ce353;
-    }
-    
-    .avatar-block-name img {
-        margin-right: 10px;
     }
     
     .skills-tools-block {
@@ -260,14 +220,14 @@
     
     #scrollable-content {
         background-color: #20202A;
-        height: 60%;
-        max-height: 100vh;
+        height: 90%;
+        max-height: 100%;
         overflow-y: auto;
         scrollbar-width: thin;
     }
     
     #scrollable-content::-webkit-scrollbar {
-        width: 7px;
+        width: 10px;
     }
     
     #scrollable-content::-webkit-scrollbar-thumb {
@@ -282,7 +242,7 @@
         flex-direction: row;
         justify-content: center;
         height: 5%;
-        width: 300px;
+        width: 299px;
     }
     
     #social-block i {
@@ -295,6 +255,23 @@
         margin: auto;
         opacity: 0.2;
         width: 80%;
+    }
+
+    .skills-title {
+        align-items: center;
+        background-color: #24242F;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 5%;
+        width: 299px;
+    }
+
+    .skills-title h2 {
+        color: #ffffff;
+        font-size: 17px;
+        font-weight: bold;
+        text-transform: uppercase;
     }
 }
 
