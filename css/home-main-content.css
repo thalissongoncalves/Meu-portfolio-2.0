@@ -688,12 +688,16 @@
         font-size: 12px;
         /* height: 20px;    */
         justify-content: left;
+        margin-left: 20px;
+        margin-top: 10px;
     }
 
     .main-project-btns {
         display: flex;
         /* height: 30px; */
         justify-content: center;
+        
+        position: relative;
     }
 
     .main-project-btns button {
