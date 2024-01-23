@@ -701,6 +701,14 @@
         padding: 5px;
         width: 100px;
     }
+
+    .btn-main-project-filter {
+        background-color: #1E1E28;
+    }
+
+    .btn-main-project-filter-active {
+        background-color: #0ce353;
+    }
 }
 
 @media screen and (max-width: 480px) {
