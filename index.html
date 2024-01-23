@@ -40,13 +40,13 @@
             <!-- Todas as opções do menu -->
             <ul class="expandir">
                 <li class="item-menu ativo">
-                    <a href="./index.html">
+                    <a href="#inicio">
                         <span class="icon"><i class="fa-solid fa-house" style="color: white"></i></span>
                         <span class="txt-link">Home</span>
                     </a>
                 </li>
                 <li class="item-menu">
-                    <a href="#">
+                    <a href="#projects">
                         <span class="icon"><i class="fa-solid fa-diagram-project" style="color: white"></i></span>
                         <span class="txt-link">Projetos</span>
                     </a>
@@ -245,6 +245,8 @@
                     <button class="main-cards-btn">SAIBA MAIS <i class="fa-solid fa-arrow-right" style="color: rgba(255, 255, 255, 0.834);"></i></button>
                 </div>
             </div> -->
+            <section id="inicio">
+            </section>
             <h2 class="title-recommendations">Sobre mim</h2>
             <hr style="width: 93%">
             <div class="about-me">
@@ -465,12 +467,9 @@
             </div>
             <h2 class="title-recommendations">Projetos</h2>
             <hr style="width: 93%">
-            <div class="main-projects">
+            <section id="projects" class="main-projects">
                 <div class="main-projects-buttons-filter">
-                    <button class="main-projects-btn btn-filter-selected">Todos</button>
-                    <button class="main-projects-btn">HTML</button>
-                    <button class="main-projects-btn">CSS</button>
-                    <button class="main-projects-btn">JavaScript</button>
+                    <!-- Criado no btn-project-filter.js -->
                 </div>
                 <div class="main-projects-cards-carousel">
                     <div class="main-project-card">
@@ -566,7 +565,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
     </main>
 </body>
@@ -576,4 +575,6 @@
 <script src="./js/right-menu-mobile.js"></script>
 <script src="https://kit.fontawesome.com/66583b1d9a.js" crossorigin="anonymous"></script>
 <script src="./js/slick-carrousel.js"></script>
+<script src="./js/scroll-animation.js"></script>
+<script src="./js/btn-project-filter.js"></script>
 </html>
