@@ -691,13 +691,16 @@
         margin-bottom: 10px;
     }
 
-    .main-project-btns button {
+    .main-project-btns a {
         background-color: #0ce35492;
         border: none;
         border-radius: 5px;
         color: white;
+        font-size: 13px;
         margin: 5px;
         padding: 5px;
+        text-align: center;
+        text-decoration: none;
         width: 100px;
     }
 
