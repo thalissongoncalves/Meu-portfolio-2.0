@@ -663,8 +663,6 @@
     }
 
     .main-project-card-two-columns {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
         padding: 10px;
         padding-bottom: 20px;
     }
@@ -690,6 +688,7 @@
     .main-project-btns {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 10px;
     }
 
     .main-project-btns button {
@@ -708,6 +707,10 @@
 
     .btn-main-project-filter-active {
         background-color: #0ce353;
+    }
+
+    .main-project-image {
+        margin-bottom: 20px;
     }
 }
 
