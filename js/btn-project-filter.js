@@ -68,7 +68,6 @@ projects.map((project) => {
 
 {/* <div class="main-project-card">
         <div class="main-project-card-two-columns">
-
             <div class="main-project-image">
                 <img src="./images/project-one.png" alt="imagem do projeto Naya Outlet" style="border-radius: 5px; width: 100%"/>
             </div>
