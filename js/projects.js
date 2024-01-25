@@ -13,7 +13,7 @@ const projectsData = [
     {
         id: "02",
         display: "block",
-        title: "01 - Lessons Learned",
+        title: "02 - Segundo Projeto",
         description: "Foi desenvolvido um site que contém uma série de informações sobre o que aprendi na Trybe ao longo das primeiras aulas de Fundamentos.",
         technologies: ["JAVASCRIPT", "REACT"],
         githubUrl: "https://github.com/thalissongoncalves/Project-Lessons-Learned/tree/main/Lessons-learned",

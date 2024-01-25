@@ -66,79 +66,6 @@ projects.map((project) => {
     
 });
 
-const createProjectCards = (tech) => {
-    if (!tech) {
-        projectsData.map((project) => {
-            const mainProjectCard = document.createElement("div");
-            mainProjectCard.className = "main-project-card";
-            mainProjectCard.style.display = project.display;
-            const mainProjectCardTwoColumns = document.createElement("div");
-            mainProjectCardTwoColumns.className = "main-project-card-two-columns";
-            const mainProjectImage = document.createElement("div");
-            mainProjectImage.className = "main-project-image";
-            const projectImageUrl = document.createElement("img");
-            projectImageUrl.src = project.image;
-            projectImageUrl.alt = project.alt;
-            projectImageUrl.style.borderRadius = "5px";
-            projectImageUrl.style.width = "100%";
-            const mainProjectInfo = document.createElement("div");
-            mainProjectInfo.className = "main-project-info";
-            const mainProjectInfoTitle = document.createElement("h2");
-            mainProjectInfoTitle.innerText = project.title;
-            const mainProjectInfoDescription = document.createElement("p");
-            mainProjectInfoDescription.innerText = project.description;
-            const mainProjectBtns = document.createElement("div");
-            mainProjectBtns.className = "main-project-btns";
-            const mainProjectButtonOne = document.createElement("button");
-            const mainProjectButtonOneIcon = document.createElement("i");
-            mainProjectButtonOneIcon.classList = "fa-brands fa-github";
-            mainProjectButtonOne.appendChild(mainProjectButtonOneIcon);
-            const mainProjectButtonOneText = document.createElement("span");
-            mainProjectButtonOneText.innerText = " GitHub";
-            mainProjectButtonOne.appendChild(mainProjectButtonOneText);
-            const mainProjectButtonSecond = document.createElement("button");
-            const mainProjectButtonSecondIcon = document.createElement("i");
-            mainProjectButtonSecondIcon.classList = "fa-solid fa-link";
-            mainProjectButtonSecond.appendChild(mainProjectButtonSecondIcon);
-            const mainProjectButtonSecondText = document.createElement("span");
-            mainProjectButtonSecondText.innerText = " Deploy";
-            mainProjectButtonSecond.appendChild(mainProjectButtonSecondText);
-            projectsCardsCarousel.appendChild(mainProjectCard);
-            mainProjectCard.appendChild(mainProjectCardTwoColumns);
-            mainProjectCardTwoColumns.appendChild(mainProjectImage);
-            mainProjectImage.appendChild(projectImageUrl);
-            mainProjectCardTwoColumns.appendChild(mainProjectBtns);
-            mainProjectBtns.appendChild(mainProjectButtonOne);
-            mainProjectBtns.appendChild(mainProjectButtonSecond);
-            mainProjectCardTwoColumns.appendChild(mainProjectInfo);
-            mainProjectInfo.appendChild(mainProjectInfoTitle);
-            mainProjectInfo.appendChild(mainProjectInfoDescription);
-            const mainProjectCardTechnologies = document.createElement("div");
-            mainProjectCardTechnologies.className = "main-project-card-technologies";
-            mainProjectCardTwoColumns.appendChild(mainProjectCardTechnologies);
-            const mainProjectCardTechnologiesRow = document.createElement("div");
-            mainProjectCardTechnologiesRow.style.display = "flex";
-            mainProjectCardTechnologiesRow.style.flexDirection = "row";
-            mainProjectCardTechnologiesRow.style.justifyContent = "right";
-            mainProjectCardTechnologies.appendChild(mainProjectCardTechnologiesRow);
-            project.technologies.map((tech) => {
-                const mainProjectCardTechnologiesIcon = document.createElement("img");
-                mainProjectCardTechnologiesIcon.style.width = "32px";
-                mainProjectCardTechnologiesIcon.style.height = "32px";
-                projectsIcon.map((icon) => {
-                    if (icon.tech === tech) {
-                        mainProjectCardTechnologiesIcon.src = icon.src;
-                    };
-                });
-                mainProjectCardTechnologiesRow.appendChild(mainProjectCardTechnologiesIcon);
-            });
-        });
-    }
-    
-}
-
-
-
 {/* <div class="main-project-card">
         <div class="main-project-card-two-columns">
 
@@ -172,9 +99,68 @@ const filterBtns = document.querySelector(".main-projects-buttons-filter").child
 const filterBtnsArray = Object.entries(filterBtns).map(([chave, valor]) => valor);
 const filterBtnsSelected = [];
 
+const createProjectCards = (tech) => {
+    if (!tech || tech.length === 0) {
+        const projectsTitle = document.querySelectorAll(".main-project-info");
+        const projectsTitleArray = Array.from(projectsTitle);
+        const projectsTitleFilhos = projectsTitleArray.map((list) => {
+            return list.children;
+        });
+
+        projectsTitleFilhos.map((html) => {
+            return html[0].parentElement.parentElement.parentElement.style.display = "block";
+        });
+    } else {
+        const projectsTitle = document.querySelectorAll(".main-project-info");
+        const projectsTitleArray = Array.from(projectsTitle);
+        const projectsTitleFilhos = projectsTitleArray.map((list) => {
+            return list.children;
+        });
+        
+
+
+        let projectsDataTechnologies = projectsData.map((tc) => {
+            return tc;
+        });
+
+        const arrayTeste = [];
+
+        projectsDataTechnologies.map((teste) => {
+            
+            tech.map((element) => {
+                if (teste.technologies.includes(element)) {
+                    return arrayTeste.push(teste);
+                }
+            });
+            
+            for (let index = 0; index < arrayTeste.length; index += 1) {
+                if (arrayTeste[index] === arrayTeste[index + 1]) {
+                    let filterIndex = arrayTeste.indexOf(arrayTeste[index]);
+                    arrayTeste.splice(filterIndex, 1);
+                };
+            }
+
+        })
+
+        arrayTeste.map((obj) => {
+            projectsTitleFilhos.map((html) => {
+                const titleText = html[0].innerText;
+                if (titleText !== obj.title) {
+                    return html[0].parentElement.parentElement.parentElement.style.display = "none";
+                }
+                
+            });
+        })
+        
+    }
+    
+}
+
 
 filterBtnsArray.map((btn) => {
+    
     btn.addEventListener("click", () => {
+        
         if (btn.className === "btn-main-project-filter") {
             btn.className = "btn-main-project-filter-active";
             filterBtnsSelected.push(btn.innerText);
@@ -188,11 +174,77 @@ filterBtnsArray.map((btn) => {
             })
         };
 
+        if (filterBtnsSelected.length > 0) {
+            createProjectCards(filterBtnsSelected);
+        } else {
+            createProjectCards();
+        };
+
     });
 });
 
-if (filterBtnsSelected.length === 0) {
-    console.log("Length == 0")
-} else {
-    console.log("Length > 1")
-};
+projectsData.map((project) => {
+    const mainProjectCard = document.createElement("div");
+    mainProjectCard.className = "main-project-card";
+    mainProjectCard.style.display = project.display;
+    const mainProjectCardTwoColumns = document.createElement("div");
+    mainProjectCardTwoColumns.className = "main-project-card-two-columns";
+    const mainProjectImage = document.createElement("div");
+    mainProjectImage.className = "main-project-image";
+    const projectImageUrl = document.createElement("img");
+    projectImageUrl.src = project.image;
+    projectImageUrl.alt = project.alt;
+    projectImageUrl.style.borderRadius = "5px";
+    projectImageUrl.style.width = "100%";
+    const mainProjectInfo = document.createElement("div");
+    mainProjectInfo.className = "main-project-info";
+    const mainProjectInfoTitle = document.createElement("h2");
+    mainProjectInfoTitle.innerText = project.title;
+    const mainProjectInfoDescription = document.createElement("p");
+    mainProjectInfoDescription.innerText = project.description;
+    const mainProjectBtns = document.createElement("div");
+    mainProjectBtns.className = "main-project-btns";
+    const mainProjectButtonOne = document.createElement("button");
+    const mainProjectButtonOneIcon = document.createElement("i");
+    mainProjectButtonOneIcon.classList = "fa-brands fa-github";
+    mainProjectButtonOne.appendChild(mainProjectButtonOneIcon);
+    const mainProjectButtonOneText = document.createElement("span");
+    mainProjectButtonOneText.innerText = " GitHub";
+    mainProjectButtonOne.appendChild(mainProjectButtonOneText);
+    const mainProjectButtonSecond = document.createElement("button");
+    const mainProjectButtonSecondIcon = document.createElement("i");
+    mainProjectButtonSecondIcon.classList = "fa-solid fa-link";
+    mainProjectButtonSecond.appendChild(mainProjectButtonSecondIcon);
+    const mainProjectButtonSecondText = document.createElement("span");
+    mainProjectButtonSecondText.innerText = " Deploy";
+    mainProjectButtonSecond.appendChild(mainProjectButtonSecondText);
+    projectsCardsCarousel.appendChild(mainProjectCard);
+    mainProjectCard.appendChild(mainProjectCardTwoColumns);
+    mainProjectCardTwoColumns.appendChild(mainProjectImage);
+    mainProjectImage.appendChild(projectImageUrl);
+    mainProjectCardTwoColumns.appendChild(mainProjectBtns);
+    mainProjectBtns.appendChild(mainProjectButtonOne);
+    mainProjectBtns.appendChild(mainProjectButtonSecond);
+    mainProjectCardTwoColumns.appendChild(mainProjectInfo);
+    mainProjectInfo.appendChild(mainProjectInfoTitle);
+    mainProjectInfo.appendChild(mainProjectInfoDescription);
+    const mainProjectCardTechnologies = document.createElement("div");
+    mainProjectCardTechnologies.className = "main-project-card-technologies";
+    mainProjectCardTwoColumns.appendChild(mainProjectCardTechnologies);
+    const mainProjectCardTechnologiesRow = document.createElement("div");
+    mainProjectCardTechnologiesRow.style.display = "flex";
+    mainProjectCardTechnologiesRow.style.flexDirection = "row";
+    mainProjectCardTechnologiesRow.style.justifyContent = "right";
+    mainProjectCardTechnologies.appendChild(mainProjectCardTechnologiesRow);
+    project.technologies.map((tech) => {
+        const mainProjectCardTechnologiesIcon = document.createElement("img");
+        mainProjectCardTechnologiesIcon.style.width = "32px";
+        mainProjectCardTechnologiesIcon.style.height = "32px";
+        projectsIcon.map((icon) => {
+            if (icon.tech === tech) {
+                mainProjectCardTechnologiesIcon.src = icon.src;
+            };
+        });
+        mainProjectCardTechnologiesRow.appendChild(mainProjectCardTechnologiesIcon);
+    });
+});
