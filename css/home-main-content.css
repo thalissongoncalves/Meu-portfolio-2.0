@@ -635,7 +635,7 @@
     .main-projects-buttons-filter {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: left;
     }
 
     .main-projects-btn {
@@ -650,8 +650,18 @@
     }
 
     .main-projects-cards-carousel {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        /* grid-template-columns: 1fr 1fr; */
+        overflow-x: auto;
+    }
+
+    .main-projects-cards-carousel::-webkit-scrollbar {
+        height: 10px;
+    }
+
+    .main-projects-cards-carousel::-webkit-scrollbar-thumb {
+        background-color: #0ce3549e;
+        border-radius: 4px;
     }
 
     .main-project-card {

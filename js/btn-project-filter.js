@@ -202,6 +202,7 @@ projectsData.map((project) => {
     mainProjectBtns.className = "main-project-btns";
     const mainProjectButtonOneUrl = document.createElement("a");
     mainProjectButtonOneUrl.href = project.githubUrl;
+    mainProjectButtonOneUrl.target = "_blank";
     const mainProjectButtonOneIcon = document.createElement("i");
     mainProjectButtonOneIcon.classList = "fa-brands fa-github";
     mainProjectButtonOneUrl.appendChild(mainProjectButtonOneIcon);
@@ -210,6 +211,7 @@ projectsData.map((project) => {
     mainProjectButtonOneUrl.appendChild(mainProjectButtonOneText);
     const mainProjectButtonSecond = document.createElement("a");
     mainProjectButtonSecond.href = project.deployUrl;
+    mainProjectButtonSecond.target = "_blank";
     const mainProjectButtonSecondIcon = document.createElement("i");
     mainProjectButtonSecondIcon.classList = "fa-solid fa-link";
     mainProjectButtonSecond.appendChild(mainProjectButtonSecondIcon);
