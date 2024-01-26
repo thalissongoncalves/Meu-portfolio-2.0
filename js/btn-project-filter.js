@@ -115,8 +115,6 @@ const createProjectCards = (tech) => {
         const projectsTitleFilhos = projectsTitleArray.map((list) => {
             return list.children;
         });
-        
-
 
         let projectsDataTechnologies = projectsData.map((tc) => {
             return tc;
@@ -128,7 +126,7 @@ const createProjectCards = (tech) => {
             
             tech.map((element) => {
                 if (teste.technologies.includes(element)) {
-                    return arrayTeste.push(teste);
+                    return arrayTeste.push(teste.title);
                 }
             });
             
@@ -137,20 +135,19 @@ const createProjectCards = (tech) => {
                     let filterIndex = arrayTeste.indexOf(arrayTeste[index]);
                     arrayTeste.splice(filterIndex, 1);
                 };
+            };
+
+        });
+
+        projectsTitleFilhos.map((html) => {
+            const titleText = html[0].innerText;
+            console.log(titleText)
+            if (arrayTeste.includes(titleText)) {
+                return html[0].parentElement.parentElement.parentElement.style.display = "block";
+            } else {
+                return html[0].parentElement.parentElement.parentElement.style.display = "none";
             }
-
-        })
-
-        arrayTeste.map((obj) => {
-            projectsTitleFilhos.map((html) => {
-                const titleText = html[0].innerText;
-                if (titleText !== obj.title) {
-                    return html[0].parentElement.parentElement.parentElement.style.display = "none";
-                }
-                
-            });
-        })
-        
+        });
     }
     
 }
