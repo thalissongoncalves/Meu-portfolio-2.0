@@ -36,6 +36,14 @@ const projectsIcon = [
         tech: "WORDPRESS",
         src: "https://img.icons8.com/color/32/wordpress.png",
     },
+    {
+        tech: "JEST",
+        src: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-jest-can-collect-code-coverage-information-from-entire-projects-logo-color-tal-revivo.png"
+    },
+    {
+        tech: "NODE",
+        src: "https://img.icons8.com/fluency/48/node-js.png",
+    },
 ];
 
 projects.map((project) => {
