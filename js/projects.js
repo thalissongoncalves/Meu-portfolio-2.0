@@ -76,7 +76,17 @@ const projectsData = [
         deployUrl: "#",
         image: "./images/07-zoo-functions-project-img.png",
     },
-    
+    {
+        id: "08",
+        display: "block",
+        title: "08 - Shopping Cart",
+        description: "Foi desenvolvido uma página utilizando API do Mercado Livre e framework VITE para criação de exibição de produtos que estão ativos no site da Mercado Livre, disponibilizando também um sistema de carrinhos onde fica salvo no localStorage para não perder o carrinho e alteração de preços conforme produtos selecionados e também um sistema de busca de CEP!",
+        technologies: ["HTML", "CSS", "JAVASCRIPT", "NODE", "JEST", "VITE"],
+        githubUrl: "https://github.com/thalissongoncalves/08-Shopping-Cart",
+        alt: "Imagem Demo do projeto Shopping Cart",
+        deployUrl: "https://08-shopping-cart.vercel.app/",
+        image: "./images/08-shopping-cart-project-img.png",
+    },
 ]
 
 export default projectsData;

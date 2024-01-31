@@ -1,7 +1,7 @@
 import projectsData from "./projects.js";
 
 const filtersBtnBlock = document.querySelector(".main-projects-buttons-filter");
-const projects = ["HTML", "CSS", "JAVASCRIPT", "REACT", "TYPESCRIPT", "PYTHON", "MYSQL", "WORDPRESS"];
+const projects = ["HTML", "CSS", "JAVASCRIPT", "REACT", "TYPESCRIPT", "PYTHON", "MYSQL", "NODE", "JEST", "VITE"];
 const projectsCardsCarousel = document.querySelector(".main-projects-cards-carousel");
 const projectsIcon = [
     {
@@ -33,16 +33,16 @@ const projectsIcon = [
         src: "https://img.icons8.com/color/48/mysql-logo.png",
     },
     {
-        tech: "WORDPRESS",
-        src: "https://img.icons8.com/color/32/wordpress.png",
-    },
-    {
         tech: "JEST",
         src: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-jest-can-collect-code-coverage-information-from-entire-projects-logo-color-tal-revivo.png"
     },
     {
         tech: "NODE",
         src: "https://img.icons8.com/fluency/48/node-js.png",
+    },
+    {
+        tech: "VITE",
+        src: "https://img.icons8.com/color/32/vite.png",
     },
 ];
 
