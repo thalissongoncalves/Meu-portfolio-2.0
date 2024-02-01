@@ -87,6 +87,17 @@ const projectsData = [
         deployUrl: "https://08-shopping-cart.vercel.app/",
         image: "./images/08-shopping-cart-project-img.png",
     },
+    {
+        id: "10",
+        display: "block",
+        title: "10 - React Testing Library",
+        description: "Esse projeto foi feito para testar minhas habilidades em: Seletores (queries) da React-Testing-Library em testes automatizados; Simular eventos com a React-Testing-Library em testes automatizados; Testar fluxos lógicos assíncronos com a React-Testing-Library; Escrever testes que permitam a refatoração da estrutura dos componentes da aplicação sem necessidade de serem alterados;Testar inputs.",
+        technologies: ["JAVASCRIPT", "JEST", "REACT"],
+        githubUrl: "https://github.com/thalissongoncalves/10-React-Testing-Library",
+        alt: "Imagem Demo do projeto React Testing Library",
+        deployUrl: "#",
+        image: "./images/10-react-testing-library-project-img.png",
+    },
 ]
 
 export default projectsData;
