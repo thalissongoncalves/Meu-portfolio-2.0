@@ -48,7 +48,7 @@
                     </a>
                 </li>
                 <li class="item-menu">
-                    <a href="#">
+                    <a href="#certificate">
                         <span class="icon"><i class="fa-solid fa-certificate" style="color: white"></i></span>
                         <span class="txt-link">Certificações</span>
                     </a>
@@ -59,12 +59,12 @@
                         <span class="txt-link">Sobre mim</span>
                     </a>
                 </li> -->
-                <li class="item-menu">
+                <!-- <li class="item-menu">
                     <a href="#">
                         <span class="icon"><i class="fa-solid fa-mobile" style="color: white"></i></span>
                         <span class="txt-link">Contato</span>
                     </a>
-                </li>
+                </li> -->
             </ul>
         </nav>
     </header>
@@ -185,7 +185,7 @@
             
             <!-- Botão para baixar currículo -->
             <button class="download-cv-btn">
-                <a href="./curriculo/curriculo.pdf" download="thalisson-curriculo">
+                <a href="./curriculo/Thalisson G - Curriculo.pdf" download="Thalisson-G-Curriculo">
                     DOWNLOAD CURRÍCULO
                     <i class="fa-solid fa-download" style="color: #8c8c8e"></i>
                 </a>
@@ -276,8 +276,8 @@
             </div>
             <div class="resume-numbers-block">
                 <div class="resume-numbers"><img src="./images/xp-icon.png"/><h3>01</h3><p>Ano de experiência</p></div>
-                <div class="resume-numbers"><img src="./images/projects-icon.png"/><h3>27</h3><p>Projetos Concluídos</p></div>
-                <div class="resume-numbers"><img src="./images/certificado-icon.png" /><h3>12</h3><p>Certificados Conquistados</p></div>
+                <div class="resume-numbers"><img src="./images/projects-icon.png"/><h3>22</h3><p>Projetos Concluídos</p></div>
+                <div class="resume-numbers"><img src="./images/certificado-icon.png" /><h3>10</h3><p>Certificados Conquistados</p></div>
                 <div class="resume-numbers"><img src="./images/experiencia-icon.png" /><h3>03</h3><p>Experiências de Trabalho</p></div>
             </div>
             <div class="about-me">
@@ -461,10 +461,10 @@
                     <p class="comment-recommendations">Profissional com amplo conhecimento em HTML, Wordpress, Excel, Python. Grande experiência com informática em geral. Adapta-se facilmente a qualquer ambiente e não teme novos desafios. Pro-ativo, responsável e prestativo.</p>
                 </div>
             </div>
+
             <h2 class="title-recommendations">Projetos</h2>
             <hr style="width: 93%">
             <section id="projects" class="main-projects">
-                <p style="color: white; font-size: 10px;">Obs: Os seguintes projetos estão em ordem numérica, onde 01 foi o primeiro projeto que eu fiz e daí em diante...</p>
                 <div class="main-projects-buttons-filter">
                     <!-- Criado no btn-project-filter.js -->
                 </div>
@@ -473,14 +473,27 @@
                 </div>
             </section>
 
+            <h2 class="title-recommendations">Certificados</h2>
+            <hr style="width: 93%">
+            <section id="certificate" class="main-certificate">
+                <div class="main-certificate-cards-carousel">
+                    <!-- Criado os cards no btn-certificates-filter.js -->
+                </div>
+            </section>
     </main>
 </body>
+
 <script src="./js/left-menu-mobile.js"></script>
 <script src="./js/main.js"></script>
 <script src="./js/right-menu.js"></script>
 <script src="./js/right-menu-mobile.js"></script>
-<script src="https://kit.fontawesome.com/66583b1d9a.js" crossorigin="anonymous"></script>
 <script src="./js/scroll-animation.js"></script>
+
+<script type="module" src="./js/certificates-carousel.js"></script>
+<script type="module" src="./js/certificates-data.js"></script>
 <script type="module" src="./js/btn-project-filter.js"></script>
 <script type="module" src="./js/projects.js"></script>
+
+<script src="https://kit.fontawesome.com/66583b1d9a.js" crossorigin="anonymous"></script>
+
 </html>

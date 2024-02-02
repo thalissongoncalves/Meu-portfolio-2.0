@@ -223,7 +223,7 @@
         height: 90%;
         max-height: 100%;
         overflow-y: auto;
-        scrollbar-width: thin;
+        /* scrollbar-width: thin; */
     }
     
     #scrollable-content::-webkit-scrollbar {
@@ -231,7 +231,7 @@
     }
     
     #scrollable-content::-webkit-scrollbar-thumb {
-        background-color: #24242F;
+        background-color: #282830;
         border-radius: 4px;
     }
     
