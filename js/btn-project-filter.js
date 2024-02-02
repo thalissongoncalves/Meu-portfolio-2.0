@@ -199,22 +199,23 @@ projectsData.map((project) => {
     mainProjectButtonSecondText.innerText = " Deploy";
     mainProjectButtonSecond.appendChild(mainProjectButtonSecondText);
     projectsCardsCarousel.appendChild(mainProjectCard);
-    mainProjectCard.appendChild(mainProjectCardTwoColumns);
-    mainProjectCardTwoColumns.appendChild(mainProjectImage);
-    mainProjectImage.appendChild(projectImageUrl);
     mainProjectCardTwoColumns.appendChild(mainProjectBtns);
     mainProjectBtns.appendChild(mainProjectButtonOneUrl);
     mainProjectBtns.appendChild(mainProjectButtonSecond);
+    mainProjectCard.appendChild(mainProjectCardTwoColumns);
+    mainProjectCardTwoColumns.appendChild(mainProjectImage);
+    mainProjectImage.appendChild(projectImageUrl);
     mainProjectCardTwoColumns.appendChild(mainProjectInfo);
     mainProjectInfo.appendChild(mainProjectInfoTitle);
     mainProjectInfo.appendChild(mainProjectInfoDescription);
+
     const mainProjectCardTechnologies = document.createElement("div");
     mainProjectCardTechnologies.className = "main-project-card-technologies";
     mainProjectCardTwoColumns.appendChild(mainProjectCardTechnologies);
     const mainProjectCardTechnologiesRow = document.createElement("div");
     mainProjectCardTechnologiesRow.style.display = "flex";
     mainProjectCardTechnologiesRow.style.flexDirection = "row";
-    mainProjectCardTechnologiesRow.style.justifyContent = "right";
+    mainProjectCardTechnologiesRow.style.justifyContent = "center";
     mainProjectCardTechnologies.appendChild(mainProjectCardTechnologiesRow);
     project.technologies.map((tech) => {
         const mainProjectCardTechnologiesIcon = document.createElement("img");
@@ -227,4 +228,8 @@ projectsData.map((project) => {
         });
         mainProjectCardTechnologiesRow.appendChild(mainProjectCardTechnologiesIcon);
     });
+
+    
+    
+    
 });

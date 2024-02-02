@@ -207,6 +207,7 @@
         /* flex-wrap: wrap; */
         margin-left: 20px;
         margin-right: 20px;
+        margin-bottom: 20px;
         /* margin-bottom: 100px; */
     }
 
@@ -563,27 +564,21 @@
     }
 
     .main-project-card-technologies {
-        display: flex;
-        flex-direction: column;
-        font-size: 12px;
-        justify-content: left;
-        padding-left: 20px;
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
     .main-project-btns {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .main-project-btns a {
-        background-color: #0ce35492;
+        background-color: #0ce35468;
         border: none;
         border-radius: 5px;
         color: white;
         font-size: 13px;
-        margin: 5px;
         padding: 5px;
         text-align: center;
         text-decoration: none;
@@ -599,7 +594,7 @@
     }
 
     .main-project-image {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .main-certificate {
