@@ -1,9 +1,31 @@
-
-
 @media screen and (max-width: 767px) {
     
     .avatar-cell-container {
-        display: block;
+        display: none;
+    }
+
+    .menu-right-btn-container {
+        background-color: transparent;
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: end;
+        position: fixed;
+        right: 0;
+        width: 65px;
+        z-index: 1;
+    }
+
+    .menu-right-btn-mobile {
+        background-color: #0ce3548a;
+        border: none;
+        border-radius: 100px;
+        height: 55px;
+        padding: 15px;
+        position: static;
+        margin-bottom: 10px;
+        width: 55px;
+        z-index: 2;
     }
 
     .main-block {
@@ -21,8 +43,7 @@
         height: 100%;
         background-image: url("../images/bedroom-vibe.gif");
         background-repeat: no-repeat;
-        background-size: 100%;
-        margin-left: 100px;
+        background-size: 300%;
         opacity: 0.3;
         z-index: -1;
     }
@@ -37,7 +58,6 @@
         height: 100%;
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
         pointer-events: none;
-        margin-left: 100px;
         z-index: -1;
     }
     
@@ -190,7 +210,7 @@
         flex-direction: column;
         justify-content: center;
         margin-bottom: 15px;
-        width: 18.7em;
+        width: 100%;
     }
     
     .avatar-block p {
@@ -286,25 +306,19 @@
         padding-left: 25px;
     }
 
-    .resume-title {
-        color: white;
-        display: flex;
-        flex-direction: row;
-        margin-right: 10px;
-    }
-
     .resume-title h3 {
-        position: relative;
-        top: -5px;
+        color: white;
+        margin-bottom: 10px;
+        margin-left: 30px;
     }
 
     .pin {
         background: #0ce353;
-        border: 2px solid #0ce353;
+        /* border: 2px solid #0ce353; */
         border-radius: 50px;
-        content: "";
+        /* content: ""; */
         height: 20px;
-        left: -11px;
+        left: -10px;
         margin-right: 10px;
         position: relative;
         width: 20px;
@@ -329,7 +343,7 @@
     }
 
     .resume-main-infos-border {
-        border-left: #8c8c8e solid 1px;
+        border-left: #0ce353 solid 1px;
         margin-left: 10px;
     }
 
@@ -516,11 +530,537 @@
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     /* Estilos para tablets */
+    .avatar-cell-container {
+        display: none;
+    }
+
+    .menu-right-btn-container {
+        display: none;
+    }
+
+    .main-block {
+        position: relative;
+        height: 100%;
+        margin-left: 100px;
+        margin-right: 255px;
+        overflow-y: auto;
+        max-width: 100%;
+    }
+
+    .main-block::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .main-block::-webkit-scrollbar-thumb {
+        background-color: #24242F;
+        border-radius: 4px;
+    }
+    
+    .main-block::before {
+        content: "";
+        position: fixed;
+        left: 0;
+        width: 75%;
+        height: 100%;
+        background-image: url("../images/bedroom-vibe.gif");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-left: 100px;
+        opacity: 0.3;
+        z-index: -1;
+    }
+    
+    .main-block::after {
+        background-color: #1E1E28;
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+        pointer-events: none;
+        margin-left: 100px;
+        z-index: -1;
+    }
+    
+    .main-projects-title {
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 15px;
+        margin-left: 30px;
+    }
+    
+    .main-recommendations-cards {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .main-cards {
+        background-color: #2c2c38c9;
+        border-radius: 5px;
+        display: block;
+        padding: 30px;
+        height: 75%;
+        max-height: 100vh;
+        margin: 10px;
+    }
+    
+    .main-cards-title {
+        color: white;
+        font-size: 17px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    
+    .main-cards-paragraph {
+        color: rgb(255, 255, 255);
+        font-size: 0.75rem;
+        font-weight: 400;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    
+    .main-cards-btn {
+        background-color: #0ce3549e;
+        border: none;
+        border-radius: 5px;
+        color: rgba(255, 255, 255, 0.834);
+        font-family: "Poppins-bold";
+        font-size: 10px;
+        padding: 5px;
+    }
+    
+    .title-recommendations {
+        color: white;
+        font-size: 25px;
+        font-weight: 800;
+        margin-top: 25px;
+        margin-left: 30px;
+        text-transform: uppercase;
+    }
+    
+    .title-people-recommendations {
+        font-size: 17px;
+        color: #0ce353;
+        margin-bottom: 5px;
+    }
+    
+    .enterprise-recommendations {
+        color: rgba(224, 224, 224, 0.622);
+        font-size: 10px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    
+    .comment-recommendations {
+        color: white;
+        font-size: 0.85rem;
+        font-weight: 400;
+    }
+    
+    .stars-block {
+        background-color: #1E1E28;
+        border-radius: 15px;
+        display: flex;
+        height: 28px;
+        justify-content: center;
+        width: 110px;
+    }
+    
+    .avatar-recommendations {
+        border-radius: 50px;
+        margin-bottom: 5px;
+        width: 60px;
+    }
+
+    .arrow-down {
+        display: none;
+    }
+
+    .avatar-block-container-close {
+        display: none;
+    }
+
+    .about-me {
+        background-color: #2c2c38c9;
+        border-radius: 5px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    
+    .about-me-infos {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .about-me-main-infos {
+        color: white;
+        font-size: 14px;
+        height: 200px;
+    }
+
+    .about-me-main-infos li {
+        margin-bottom: 30px;
+    }
+    
+    .about-me-main-infos-span {
+        color: #0ce353;
+        font-weight: 600;
+    }
+
+    .avatar {
+        border-radius: 50%;
+        height: 100px;
+        margin-bottom: 5px;
+        vertical-align: middle;
+        width: 100px;
+    }
+    
+    .avatar-block {
+        align-items: center;
+        background-color: #24242F;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .avatar-block p {
+        color: white;
+        font-size: 14px;
+        margin: 3px;
+    }
+    
+    .avatar-block-name {
+        color: #0ce353;
+        display: flex;
+        font-size: 18px;
+        text-decoration: none;
+        transition-duration: 0.5s;
+    }
+    
+    .avatar-block-name:hover {
+        transition-duration: 0.5s;
+        color: #0ce353;
+    }
+    
+    .avatar-block-name img {
+        margin-right: 10px;
+    }
+
+    .about-me-resume {
+        color: #ffffff;
+        font-size: 12px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .resume-numbers-block {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 50px;
+    }
+    
+    .resume-numbers {
+        align-items: center;
+        background-color: #2c2c38c9;
+        border-radius: 5px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 30px;
+        margin: 10px;
+        margin-top: 30px;
+        padding: 5px;
+        height: 150px;
+        text-align: center;
+    }
+
+    .resume-numbers h3 {
+        font-size: 30px;
+        font-weight: 600;
+        position: relative;
+        top: -25px;
+    }
+
+    .resume-numbers p {
+        font-size: 13px;
+        position: relative;
+        top: -25px;
+    }
+
+    .resume-numbers img {
+        background-color: #4c4c5577;
+        border-radius: 30px;
+        padding: 15px;
+        position: relative;
+        top: -45px;
+        width: 35px;
+    }
+
+    .resume {
+        background-color: #2c2c38c9;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .resume-infos {
+        margin-left: 10px;
+        margin-right: 30px;
+        margin-bottom: 20px;
+        padding-left: 25px;
+    }
+
+    .resume-title {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        margin-right: 10px;
+    }
+
+    .resume-title h3 {
+        position: relative;
+        top: -5px;
+    }
+
+    .pin {
+        background: #0ce353;
+        border: 2px solid #0ce353;
+        border-radius: 50px;
+        content: "";
+        height: 20px;
+        left: -11px;
+        margin-right: 10px;
+        position: relative;
+        width: 20px;
+    }
+
+    .resume-infos-date {
+        background-color: #4c4c5577;
+        color: white;
+        padding: 5px;
+        text-align: center;
+        width: 200px;
+    }
+
+    .resume-main-infos {
+        color: #d5d5d5;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .resume-main-infos-address {
+        margin-bottom: 10px;
+    }
+
+    .resume-main-infos-border {
+        border-left: white solid 1px;
+        margin-left: 10px;
+    }
+
+    .main-projects {
+        background-color: #2c2c38c9;
+        border-radius: 5px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .main-projects-buttons-filter {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+    .main-projects-btn {
+        background-color: #1E1E28;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-weight: 600;
+        margin-top: 5px;
+        padding: 10px;
+        text-transform: uppercase;
+    }
+
+    .main-projects-cards-carousel {
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .main-projects-cards-carousel::-webkit-scrollbar {
+        height: 10px;
+    }
+
+    .main-projects-cards-carousel::-webkit-scrollbar-thumb {
+        background-color: #0ce3549e;
+        border-radius: 4px;
+    }
+
+    .main-project-card {
+        background-color: #1E1E28;
+        border-radius: 5px;
+        color: white;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .main-project-card-two-columns {
+        padding: 5px;
+        width: 350px;
+    }
+
+    .main-project-card div h2 {
+        color: #0ce353;
+        font-size: 15px;
+    }
+
+    .main-project-card div p {
+        font-size: 12px;
+    }
+
+    .main-project-card-technologies {
+        margin-top: 20px;
+    }
+
+    .main-project-btns {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+
+    .main-project-btns a {
+        background-color: #0ce35468;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 13px;
+        padding: 5px;
+        text-align: center;
+        text-decoration: none;
+        width: 100px;
+    }
+
+    .btn-main-project-filter {
+        background-color: #1E1E28;
+    }
+
+    .btn-main-project-filter-active {
+        background-color: #0ce353;
+    }
+
+    .main-project-image {
+        margin-bottom: 10px;
+    }
+
+    .main-certificate {
+        background-color: #2c2c38c9;
+        border-radius: 5px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .main-certificate-cards-carousel {
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .main-certificate-cards-carousel::-webkit-scrollbar {
+        height: 10px;
+    }
+
+    .main-certificate-cards-carousel::-webkit-scrollbar-thumb {
+        background-color: #0ce3549e;
+        border-radius: 4px;
+    }
+
+    .main-certificate-card {
+        background-color: #1E1E28;
+        border-radius: 5px;
+        color: white;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .main-certificate-card-two-columns {
+        padding: 5px;
+        width: 350px;
+    }
+
+    .main-certificate-card div h2 {
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .main-certificate-card div p {
+        font-size: 12px;
+    }
+
+    .main-certificate-card-technologies {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        justify-content: left;
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+
+    .main-certificate-btns {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .main-certificate-btns a {
+        background-color: #0ce35492;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 13px;
+        margin: 5px;
+        padding: 5px;
+        text-align: center;
+        text-decoration: none;
+        width: 100px;
+    }
+
+    .main-certificate-image {
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
     /* Estilos para desktops e laptops */
     .avatar-cell-container {
+        display: none;
+    }
+
+    .menu-right-btn-container {
         display: none;
     }
 
@@ -684,12 +1224,12 @@
     
     .about-me-infos {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 2fr 2fr 2fr;
     }
 
     .about-me-main-infos {
         color: white;
-        font-size: 14px;
+        font-size: 10px;
         height: 200px;
         margin-top: 25px;
     }
@@ -716,19 +1256,19 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 18.7em;
+        width: 100%;
     }
     
     .avatar-block p {
         color: white;
-        font-size: 14px;
+        font-size: 10px;
         margin: 3px;
     }
     
     .avatar-block-name {
         color: #0ce353;
         display: flex;
-        font-size: 18px;
+        font-size: 13px;
         text-decoration: none;
         transition-duration: 0.5s;
     }
@@ -754,7 +1294,7 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         margin-left: 30px;
         margin-right: 30px;
-        margin-top: 30px;
+        margin-top: 50px;
     }
     
     .resume-numbers {
@@ -780,7 +1320,7 @@
     }
 
     .resume-numbers p {
-        font-size: 13px;
+        font-size: 8px;
         position: relative;
         top: -25px;
     }
@@ -855,7 +1395,7 @@
     }
 
     .resume-main-infos-border {
-        border-left: #8c8c8e solid 1px;
+        border-left: white solid 1px;
         margin-left: 10px;
     }
 
@@ -1042,6 +1582,18 @@
 
 @media screen and (min-width: 1200px) {
     /* Estilos para telas grandes em geral */
+    .about-me-main-infos {
+        color: white;
+        font-size: 13px;
+    }
+
+    .avatar-block-name {
+        font-size: 16px;
+    }
+
+    .resume-numbers p {
+        font-size: 11px;
+    }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

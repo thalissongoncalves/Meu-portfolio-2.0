@@ -1,7 +1,6 @@
 const menuItem = document.querySelectorAll('.item-menu');
 let btnExp = document.querySelector('#btn-exp');
 let menuSide = document.querySelector('#menu-block');
-let rightMenuBtnMobile = document.querySelector('.menu-right-btn');
 let blockMain = document.querySelector('.main-block');
 let aboutMe = document.querySelector('.about-me');
 

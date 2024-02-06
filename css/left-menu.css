@@ -4,7 +4,7 @@
         /* box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1); */
         display: none;
         position: fixed;
-        /* width: 18.7rem; */
+        width: 100%;
         height: 100%;
     }
     
@@ -100,7 +100,7 @@
     #scrollable-content {
         background-color: #20202A;
         display: none;
-        height: 100%;
+        height: 90%;
         overflow-y: auto;
         scrollbar-width: auto;
     }
@@ -198,6 +198,109 @@
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     /* Estilos para tablets */
+    .left-content {
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        right: 0;
+        height: 100%;
+    }
+    
+    .skills-tools-block {
+        padding: 10px 20px;
+    }
+    
+    .skills-tools-block p {
+        color: white;
+        display: flex;
+        font-size: 8px;
+        line-height: 35px;
+    }
+    
+    .skills-tools-block p img {
+        margin-right: 5px;
+        width: 30px;
+    }
+    
+    .skills-tools-block > h2 {
+        color: #0ce353;
+        font-size: 10px;
+        font-weight: 600;
+    }
+    
+    .download-cv-btn {
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 6px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        padding: 10px 25px;
+    }
+    
+    .download-cv-btn a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    #scrollable-content {
+        background-color: #20202A;
+        height: 90%;
+        max-height: 100%;
+        overflow-y: auto;
+        /* scrollbar-width: thin; */
+    }
+    
+    #scrollable-content::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    #scrollable-content::-webkit-scrollbar-thumb {
+        background-color: #282830;
+        border-radius: 4px;
+    }
+    
+    #social-block {
+        align-items: center;
+        background-color: #24242F;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 5%;
+        width: 100%;
+    }
+    
+    #social-block i {
+        color: white;
+        margin: 0 10px;
+    }
+    
+    hr {
+        justify-content: center;
+        margin: auto;
+        opacity: 0.2;
+        width: 80%;
+    }
+
+    .skills-title {
+        align-items: center;
+        background-color: #24242F;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 5%;
+        width: 100%;
+    }
+
+    .skills-title h2 {
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .btn-close-cell {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1024px) {

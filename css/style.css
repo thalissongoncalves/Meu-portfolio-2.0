@@ -20,27 +20,3 @@ body {
     font-family: 'Poppins-regular';
     height: 100vh;
 }
-
-@media screen and (max-width: 767px) {
-    /* Estilos para smartphones */
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    /* Estilos para tablets */
-}
-
-@media screen and (min-width: 1024px) {
-    /* Estilos para desktops e laptops */
-}
-
-@media screen and (max-width: 480px) {
-    /* Estilos para telas pequenas em geral */
-}
-
-@media screen and (min-width: 1200px) {
-    /* Estilos para telas grandes em geral */
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    /* Estilos para telas de alta resolução (Retina) */
-}
