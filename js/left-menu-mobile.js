@@ -7,7 +7,7 @@ const avatarCloseBtn = document.querySelector(".avatar-block-close-btn");
 const closeBtn = document.querySelector(".btn-close-cell");
 const mainBlock = document.getElementById("home");
 
-avatarBtnMobile.addEventListener('click', function() {
+avatarBtnMobile.addEventListener('click', () => {
     headerMobile.style.display = "none";
     leftContent.style.display = "block";
     avatarBlock.style.display = "flex";
@@ -15,15 +15,8 @@ avatarBtnMobile.addEventListener('click', function() {
     mainBlock.style.display = "none";
 })
 
-avatarCloseBtn.addEventListener('click', function() {
-    headerMobile.style.display = "block";
-    leftContent.style.display = "none";
-    avatarBlock.style.display = "none";
-    scrollableContent.style.display = "none";
-})
-
-closeBtn.addEventListener("click", function() {
+closeBtn.addEventListener("click", () => {
     leftContent.style.display = "none";
     headerMobile.style.display = "block";
-    // mainBlock.style.display = "block";
+    mainBlock.style.display = "block";
 })

@@ -66,7 +66,7 @@
     }
     
     .skills-tools-block p {
-        color: #8c8c8e;
+        color: white;
         display: flex;
         font-size: 14px;
         line-height: 35px;
@@ -77,15 +77,15 @@
     }
     
     .skills-tools-block > h2 {
-        color: white;
-        font-size: 15px;
-        font-weight: 400;
+        color: #0ce353;
+        font-size: 17px;
+        font-weight: 600;
     }
     
     .download-cv-btn {
         background-color: transparent;
         border: none;
-        color: #8c8c8e;
+        color: white;
         font-size: 12px;
         font-weight: 600;
         letter-spacing: 2px;
@@ -94,7 +94,7 @@
     
     .download-cv-btn a {
         text-decoration: none;
-        color: #8c8c8e;
+        color: white;
     }
     
     #scrollable-content {
@@ -125,7 +125,7 @@
     }
     
     #social-block i {
-        color: #8c8c8e;
+        color: white;
         margin: 0 10px;
     }
     
@@ -176,13 +176,13 @@
 
     .skills-title h2 {
         color: #ffffff;
-        font-size: 17px;
+        font-size: 20px;
         font-weight: bold;
         text-transform: uppercase;
     }
 
     .btn-close-cell {
-        background-color: transparent;
+        border: none;
         color: white;
         right: 10px;
         top: 10px;
@@ -215,7 +215,7 @@
     }
     
     .skills-tools-block p {
-        color: #8c8c8e;
+        color: white;
         display: flex;
         font-size: 14px;
         line-height: 35px;
@@ -226,15 +226,15 @@
     }
     
     .skills-tools-block > h2 {
-        color: white;
-        font-size: 15px;
-        font-weight: 400;
+        color: #0ce353;
+        font-size: 17px;
+        font-weight: 600;
     }
     
     .download-cv-btn {
         background-color: transparent;
         border: none;
-        color: #8c8c8e;
+        color: white;
         font-size: 12px;
         font-weight: 600;
         letter-spacing: 2px;
@@ -244,7 +244,7 @@
     
     .download-cv-btn a {
         text-decoration: none;
-        color: #8c8c8e;
+        color: white;
     }
     
     #scrollable-content {
@@ -275,7 +275,7 @@
     }
     
     #social-block i {
-        color: #8c8c8e;
+        color: white;
         margin: 0 10px;
     }
     
@@ -297,10 +297,14 @@
     }
 
     .skills-title h2 {
-        color: #ffffff;
-        font-size: 17px;
+        color: white;
+        font-size: 20px;
         font-weight: bold;
         text-transform: uppercase;
+    }
+
+    .btn-close-cell {
+        display: none;
     }
 }
 

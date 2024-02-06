@@ -94,7 +94,7 @@
     }
     
     .title-recommendations {
-        color: #0ce353;
+        color: white;
         font-size: 20px;
         font-weight: 800;
         margin-top: 25px;
@@ -162,7 +162,7 @@
     }
 
     .about-me-main-infos {
-        color: rgba(224, 224, 224, 0.622);
+        color: white;
         font-size: 14px;
         height: 200px;
     }
@@ -194,7 +194,7 @@
     }
     
     .avatar-block p {
-        color: #8c8c8e;
+        color: white;
         font-size: 14px;
         margin: 3px;
     }
@@ -346,7 +346,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: left;
     }
 
     .main-projects-btn {
@@ -365,6 +365,15 @@
         overflow-x: auto;
     }
 
+    .main-projects-cards-carousel::-webkit-scrollbar {
+        height: 10px;
+    }
+
+    .main-projects-cards-carousel::-webkit-scrollbar-thumb {
+        background-color: #0ce3549e;
+        border-radius: 4px;
+    }
+
     .main-project-card {
         background-color: #1E1E28;
         border-radius: 5px;
@@ -375,7 +384,8 @@
 
     .main-project-card-two-columns {
         padding: 5px;
-        width: 250px;
+        max-width: 100vw;
+        width: 95%;
     }
 
     .main-project-card div h2 {
@@ -394,7 +404,7 @@
     .main-project-btns {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 20px;
+        margin-top: 20px;
     }
 
     .main-project-btns a {
@@ -403,6 +413,7 @@
         border-radius: 5px;
         color: white;
         font-size: 13px;
+        margin: 10px;
         padding: 5px;
         text-align: center;
         text-decoration: none;
@@ -612,7 +623,7 @@
     }
     
     .title-recommendations {
-        color: #0ce353;
+        color: white;
         font-size: 25px;
         font-weight: 800;
         margin-top: 25px;
@@ -677,7 +688,7 @@
     }
 
     .about-me-main-infos {
-        color: rgba(224, 224, 224, 0.622);
+        color: white;
         font-size: 14px;
         height: 200px;
         margin-top: 25px;
@@ -688,7 +699,7 @@
     }
     
     .about-me-main-infos-span {
-        color: white;
+        color: #0ce353;
         font-weight: 600;
     }
 
@@ -709,7 +720,7 @@
     }
     
     .avatar-block p {
-        color: #8c8c8e;
+        color: white;
         font-size: 14px;
         margin: 3px;
     }
@@ -802,7 +813,7 @@
     }
 
     .resume-title {
-        color: #0ce353;
+        color: white;
         display: flex;
         flex-direction: row;
         margin-right: 10px;
@@ -869,7 +880,7 @@
         border-radius: 5px;
         color: white;
         font-weight: 600;
-        margin: 5px;
+        margin-top: 5px;
         padding: 10px;
         text-transform: uppercase;
     }
@@ -916,8 +927,8 @@
 
     .main-project-btns {
         display: flex;
-        justify-content: space-between;
-        margin-bottom: 20px;
+        justify-content: space-evenly;
+        margin-top: 20px;
     }
 
     .main-project-btns a {

@@ -199,9 +199,7 @@ projectsData.map((project) => {
     mainProjectButtonSecondText.innerText = " Deploy";
     mainProjectButtonSecond.appendChild(mainProjectButtonSecondText);
     projectsCardsCarousel.appendChild(mainProjectCard);
-    mainProjectCardTwoColumns.appendChild(mainProjectBtns);
-    mainProjectBtns.appendChild(mainProjectButtonOneUrl);
-    mainProjectBtns.appendChild(mainProjectButtonSecond);
+    
     mainProjectCard.appendChild(mainProjectCardTwoColumns);
     mainProjectCardTwoColumns.appendChild(mainProjectImage);
     mainProjectImage.appendChild(projectImageUrl);
@@ -228,7 +226,9 @@ projectsData.map((project) => {
         });
         mainProjectCardTechnologiesRow.appendChild(mainProjectCardTechnologiesIcon);
     });
-
+    mainProjectCardTwoColumns.appendChild(mainProjectBtns);
+    mainProjectBtns.appendChild(mainProjectButtonOneUrl);
+    mainProjectBtns.appendChild(mainProjectButtonSecond);
     
     
     
