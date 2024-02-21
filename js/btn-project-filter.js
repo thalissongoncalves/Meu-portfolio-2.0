@@ -1,7 +1,7 @@
 import projectsData from "./projects.js";
 
 const filtersBtnBlock = document.querySelector(".main-projects-buttons-filter");
-const projects = ["HTML", "CSS", "JAVASCRIPT", "REACT", "PYTHON", "NODE", "JEST", "VITE"];
+const projects = ["HTML", "CSS", "JAVASCRIPT", "REACT", "PYTHON", "NODE", "JEST", "VITE", "WORDPRESS"];
 const projectsCardsCarousel = document.querySelector(".main-projects-cards-carousel");
 const projectsIcon = [
     {
@@ -44,6 +44,10 @@ const projectsIcon = [
         tech: "VITE",
         src: "https://img.icons8.com/color/32/vite.png",
     },
+    {
+        tech: "WORDPRESS",
+        src: "https://img.icons8.com/color/48/wordpress.png",
+    }
 ];
 
 projects.map((project) => {

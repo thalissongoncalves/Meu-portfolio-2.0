@@ -1,5 +1,16 @@
 const projectsData = [
     {
+        id: "23",
+        display: "block",
+        title: "23 - Naya Outlet",
+        description: "Feito um site para uma cliente para e-commerce de venda de roupas",
+        technologies: ["WORDPRESS"],
+        githubUrl: "",
+        alt: "Imagem Demo do site Naya Outlet",
+        deployUrl: "https://nayaoutlet.com.br/",
+        image: "./images/23-nayaoutlet-project-img.png",
+    },
+    {
         id: "22",
         display: "block",
         title: "22 - Followers superior ou inferior GAME",
