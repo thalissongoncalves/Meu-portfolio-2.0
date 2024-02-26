@@ -4,7 +4,7 @@ const projectsData = [
         display: "block",
         title: "23 - Naya Outlet",
         description: "Feito um site para uma cliente para e-commerce de venda de roupas",
-        technologies: ["WORDPRESS"],
+        technologies: ["JAVASCRIPT", "HTML", "CSS", "WORDPRESS"],
         githubUrl: "",
         alt: "Imagem Demo do site Naya Outlet",
         deployUrl: "https://nayaoutlet.com.br/",
