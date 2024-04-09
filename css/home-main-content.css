@@ -1216,6 +1216,7 @@
     .about-me {
         background-color: #2c2c38c9;
         border-radius: 5px;
+        display: none;
         margin-left: 30px;
         margin-right: 30px;
         margin-top: 10px;
@@ -1253,9 +1254,12 @@
     
     .avatar-block {
         align-items: center;
+        background-color: #24242F;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
         width: 100%;
     }
     

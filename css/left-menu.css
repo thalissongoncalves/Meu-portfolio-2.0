@@ -320,7 +320,7 @@
     .skills-tools-block p {
         color: white;
         display: flex;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 35px;
     }
     
@@ -329,8 +329,8 @@
     }
     
     .skills-tools-block > h2 {
-        color: #0ce353;
-        font-size: 17px;
+        color: #ffffff;
+        font-size: 14px;
         font-weight: 600;
     }
     
@@ -352,7 +352,7 @@
     
     #scrollable-content {
         background-color: #20202A;
-        height: 90%;
+        height: 95%;
         max-height: 100%;
         overflow-y: auto;
         /* scrollbar-width: thin; */
