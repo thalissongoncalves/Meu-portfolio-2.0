@@ -1,7 +1,7 @@
 import projectsData from "./projects.js";
 
 const filtersBtnBlock = document.querySelector(".main-projects-buttons-filter");
-const projects = ["HTML", "CSS", "JAVASCRIPT", "REACT", "PYTHON", "NODE", "JEST", "VITE", "WORDPRESS"];
+const projects = ["HTML", "CSS", "JAVASCRIPT", "REACT", "NODE", "JEST", "VITE", "WORDPRESS"];
 const projectsCardsCarousel = document.querySelector(".main-projects-cards-carousel");
 const projectsIcon = [
     {

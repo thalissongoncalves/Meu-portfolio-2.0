@@ -1577,6 +1577,14 @@
     .main-certificate-image {
         margin-bottom: 20px;
     }
+
+    .devCertificateFSBtn {
+        background-color: transparent;
+        border-color: transparent;
+        color: #d5d5d5;
+        font-family: 'Poppins-regular';
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 480px) {
