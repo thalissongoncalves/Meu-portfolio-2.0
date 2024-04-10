@@ -1164,10 +1164,9 @@
     
     .title-recommendations {
         color: white;
-        font-size: 25px;
+        font-size: 30px;
         font-weight: 800;
-        margin-top: 25px;
-        margin-left: 30px;
+        text-align: center;
         text-transform: uppercase;
     }
     
@@ -1370,7 +1369,7 @@
 
     .pin {
         background: #0ce353;
-        border: 2px solid #0ce353;
+        border: 2px solid #ffffff;
         border-radius: 50px;
         content: "";
         height: 20px;
