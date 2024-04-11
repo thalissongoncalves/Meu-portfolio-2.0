@@ -100,7 +100,7 @@
     #scrollable-content {
         background-color: #20202A;
         display: none;
-        height: 90%;
+        height: 95%;
         overflow-y: auto;
         scrollbar-width: auto;
     }
@@ -148,9 +148,7 @@
         border: none;
         display: flex;
         flex-direction: column;
-        margin-left: 20px;
-        margin-bottom: 5px;
-        width: 50px;
+        width: 100%;
     }
 
     .arrow-down {
@@ -161,6 +159,8 @@
     .avatar-cell-container {
         background-color: #24242F;
         display: flex;
+        justify-content: center;
+        padding-bottom: 5px;
         width: 100%;
     }
 
@@ -194,15 +194,32 @@
         background-color: transparent;
     }
 
+    .closeBtnMenuMobile {
+        background-color: transparent;
+        border: transparent;
+        margin: 20px;
+        position: fixed;
+        right: 0;
+        width: 30px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .closeBtnMenuMobile {
+        display: none;
+    }
+    
+    .avatar-cell-container {
+        display: none;
+    }
+
     /* Estilos para tablets */
     .left-content {
         box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
         position: fixed;
         right: 0;
         height: 100%;
+        width: 30%;
     }
     
     .skills-tools-block {
@@ -212,7 +229,7 @@
     .skills-tools-block p {
         color: white;
         display: flex;
-        font-size: 8px;
+        font-size: 12px;
         line-height: 35px;
     }
     
@@ -223,7 +240,7 @@
     
     .skills-tools-block > h2 {
         color: #0ce353;
-        font-size: 10px;
+        font-size: 15px;
         font-weight: 600;
     }
     
@@ -244,7 +261,7 @@
     
     #scrollable-content {
         background-color: #20202A;
-        height: 90%;
+        height: 95%;
         max-height: 100%;
         overflow-y: auto;
         /* scrollbar-width: thin; */
