@@ -1,9 +1,9 @@
 const projectsData = [
     {
-        id: "06",
+        id: "05",
         display: "block",
-        title: "06 - Naya Outlet",
-        description: "Feito um site para uma cliente para e-commerce de venda de roupas",
+        title: "05 - Naya Outlet",
+        description: "Um e-commerce feito como freelance para uma loja de roupas femininas onde desenvolvi o layout do 0 e também desenvolvi o site em WordPress e personalizando com HTML, CSS e JavaScript.",
         technologies: ["JAVASCRIPT", "HTML", "CSS", "WORDPRESS"],
         githubUrl: "",
         alt: "Imagem Demo do site Naya Outlet",
@@ -11,9 +11,9 @@ const projectsData = [
         image: "./images/23-nayaoutlet-project-img.png",
     },
     {
-        id: "05",
+        id: "04",
         display: "block",
-        title: "05 - Solar System",
+        title: "04 - Solar System",
         description: "Uma página que mostra missões históricas feito em planetas vizinhos, detalhando com o nome da missão, ano, país e planeta. Mostrando também a ordem dos planetas no sistema solar, projeto feito em React E Js.",
         technologies: ["HTML", "CSS", "JAVASCRIPT", "REACT"],
         githubUrl: "https://github.com/thalissongoncalves/09-Solar-System",
@@ -22,9 +22,9 @@ const projectsData = [
         image: "./images/09-system-solar-project-img.png",
     },
     {
-        id: "04",
+        id: "03",
         display: "block",
-        title: "04 - Shopping Cart",
+        title: "03 - Shopping Cart",
         description: "Foi desenvolvido uma página utilizando API do Mercado Livre e framework VITE para criação de exibição de produtos que estão ativos no site da Mercado Livre, disponibilizando também um sistema de carrinhos onde fica salvo no localStorage para não perder o carrinho e alteração de preços conforme produtos selecionados e também um sistema de busca de CEP!",
         technologies: ["HTML", "CSS", "JAVASCRIPT", "NODE", "JEST", "VITE"],
         githubUrl: "https://github.com/thalissongoncalves/08-Shopping-Cart",
@@ -33,9 +33,9 @@ const projectsData = [
         image: "./images/08-shopping-cart-project-img.png",
     },
     {
-        id: "03",
+        id: "02",
         display: "block",
-        title: "03 - Trybewarts",
+        title: "02 - Trybewarts",
         description: "Uma página de formulário da Escola de Magia de Trybewarts, em que as pessoas estudantes poderão enviar seus feedbacks sobre ela. O tema desse projeto é baseado na obra 'Harry Potter', de J. K. Rowling.",
         technologies: ["HTML", "CSS", "JAVASCRIPT"],
         githubUrl: "https://github.com/thalissongoncalves/05-Trybewarts",
@@ -44,9 +44,9 @@ const projectsData = [
         image: "./images/05-trybewarts-project-img.png",
     },
     {
-        id: "02",
+        id: "01",
         display: "block",
-        title: "02 - Paleta de Cores",
+        title: "01 - Paleta de Cores",
         description: "Editor de arte com pixels em que a pessoa usuária poderá escolher uma cor em uma paleta de cores e poderá pintar o que quiser em um quadro branco 🎨 🧑‍🎨",
         technologies: ["HTML", "CSS", "JAVASCRIPT"],
         githubUrl: "https://github.com/thalissongoncalves/04-Paleta-de-Cores",
@@ -54,17 +54,6 @@ const projectsData = [
         deployUrl: "https://04-paleta-de-cores.vercel.app/",
         image: "./images/04-paleta-de-cores-project-img.png",
     },
-    {
-        id: "01",
-        display: "block",
-        title: "01 - Lessons Learned",
-        description: "Site que contém uma série de informações sobre o que aprendi na Trybe ao longo das primeiras aulas de Fundamentos.",
-        technologies: ["HTML", "CSS"],
-        githubUrl: "https://github.com/thalissongoncalves/01-Project-Lessons-Learned",
-        alt: "Imagem Demo do projeto Lessons Learned",
-        deployUrl: "https://01-project-lessons-learned.vercel.app/",
-        image: "./images/01-lessons-learned-project-img.png",
-    }, 
 ]
 
 export default projectsData;
