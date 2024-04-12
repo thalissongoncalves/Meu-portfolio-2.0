@@ -1,7 +1,7 @@
 import projectsData from "./projects.js";
 
 const filtersBtnBlock = document.querySelector(".main-projects-buttons-filter");
-const projects = ["HTML", "CSS", "JAVASCRIPT", "REACT", "NODE", "JEST", "VITE", "WORDPRESS"];
+const projects = ["HTML", "CSS", "JAVASCRIPT", "REACT", "NODE", "JEST", "VITE", "SHOPIFY"];
 const projectsCardsCarousel = document.querySelector(".main-projects-cards-carousel");
 const projectsIcon = [
     {
@@ -45,8 +45,8 @@ const projectsIcon = [
         src: "https://img.icons8.com/color/32/vite.png",
     },
     {
-        tech: "WORDPRESS",
-        src: "https://img.icons8.com/color/48/wordpress.png",
+        tech: "SHOPIFY",
+        src: "./images/shopify-icon.png"
     }
 ];
 
