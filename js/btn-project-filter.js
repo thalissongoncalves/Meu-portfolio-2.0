@@ -1,7 +1,7 @@
 import projectsData from "./projects.js";
 
 const filtersBtnBlock = document.querySelector(".main-projects-buttons-filter");
-const projects = ["HTML", "CSS", "JAVASCRIPT", "REACT", "NODE", "JEST", "VITE", "SHOPIFY"];
+const projects = ["HTML", "CSS", "JAVASCRIPT", "REACT", "ANGULAR", "TYPESCRIPT", "SHOPIFY"];
 const projectsCardsCarousel = document.querySelector(".main-projects-cards-carousel");
 const projectsIcon = [
     {
@@ -47,6 +47,10 @@ const projectsIcon = [
     {
         tech: "SHOPIFY",
         src: "./images/shopify-icon.png"
+    },
+    {
+        tech: "ANGULAR",
+        src: "./images/angular-icon.png"
     }
 ];
 

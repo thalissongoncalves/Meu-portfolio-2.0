@@ -1,5 +1,16 @@
 const projectsData = [
     {
+        id: "06",
+        display: "block",
+        title: "Rick & Morty",
+        description: `🚀 Desenvolvi uma aplicação inspirada em "Rick & Morty" em apenas 5 dias, utilizando Angular, TypeScript, HTML e CSS. Integrei-a à API https://rickandmortyapi.com/, oferecendo recursos como login, páginas de listagem com rolagem infinita e busca global. Cada card possui detalhes e opções de favoritar/desfavoritar, além de um menu de perfil.`,
+        technologies: ["ANGULAR", "TYPESCRIPT", "HTML", "CSS"],
+        githubUrl: "",
+        alt: "Imagem Demo da aplicação Rick & Morty",
+        deployUrl: "https://tg-rick-and-morty.vercel.app/",
+        image: "./images/24-rick-and-morty-project.png"
+    },
+    {
         id: "05",
         display: "block",
         title: "05 - Naya Outlet",
