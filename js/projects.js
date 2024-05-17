@@ -1,10 +1,21 @@
 const projectsData = [
     {
+        id: "07",
+        display: "block",
+        title: "Meteora",
+        description: `Desenvolvi uma landing page responsiva para loja de roupa chamada Meteora, usando Bootstrap para praticar a responsividade utilizando grid, flex e classes bootstrap`,
+        technologies: ["HTML", "CSS", "BOOTSTRAP"],
+        githubUrl: "https://github.com/thalissongoncalves/Bootstrap/tree/main/Meteora",
+        alt: "Imagem demo da landing page Meteora",
+        deployUrl: "https://bootstrap-phi-ochre.vercel.app",
+        image: "./images/Meteora.png"
+    },
+    {
         id: "06",
         display: "block",
         title: "Rick & Morty",
         description: `🚀 Desenvolvi uma aplicação inspirada em "Rick & Morty" em apenas 5 dias, utilizando Angular, TypeScript, HTML e CSS. Integrei-a à API https://rickandmortyapi.com/, oferecendo recursos como login, páginas de listagem com rolagem infinita e busca global. Cada card possui detalhes e opções de favoritar/desfavoritar, além de um menu de perfil.`,
-        technologies: ["ANGULAR", "TYPESCRIPT", "HTML", "CSS"],
+        technologies: ["HTML", "CSS", "TYPESCRIPT", "ANGULAR"],
         githubUrl: "",
         alt: "Imagem Demo da aplicação Rick & Morty",
         deployUrl: "https://tg-rick-and-morty.vercel.app/",
@@ -13,9 +24,9 @@ const projectsData = [
     {
         id: "05",
         display: "block",
-        title: "05 - Naya Outlet",
+        title: "Naya Outlet",
         description: "Um e-commerce feito como freelance para uma loja de roupas femininas onde desenvolvi o layout do 0 e também desenvolvi o site na Shopify e personalizando com HTML, CSS e JavaScript.",
-        technologies: ["JAVASCRIPT", "HTML", "CSS", "SHOPIFY"],
+        technologies: ["HTML", "CSS", "JAVASCRIPT", "SHOPIFY"],
         githubUrl: "",
         alt: "Imagem Demo do site Naya Outlet",
         deployUrl: "https://nayastore.com.br/",
@@ -24,7 +35,7 @@ const projectsData = [
     {
         id: "04",
         display: "block",
-        title: "04 - Solar System",
+        title: "Solar System",
         description: "Uma página que mostra missões históricas feito em planetas vizinhos, detalhando com o nome da missão, ano, país e planeta. Mostrando também a ordem dos planetas no sistema solar, projeto feito em React E Js.",
         technologies: ["HTML", "CSS", "JAVASCRIPT", "REACT"],
         githubUrl: "https://github.com/thalissongoncalves/09-Solar-System",
@@ -35,7 +46,7 @@ const projectsData = [
     {
         id: "03",
         display: "block",
-        title: "03 - Shopping Cart",
+        title: "Shopping Cart",
         description: "Foi desenvolvido uma página utilizando API do Mercado Livre e framework VITE para criação de exibição de produtos que estão ativos no site da Mercado Livre, disponibilizando também um sistema de carrinhos onde fica salvo no localStorage para não perder o carrinho e alteração de preços conforme produtos selecionados e também um sistema de busca de CEP!",
         technologies: ["HTML", "CSS", "JAVASCRIPT", "NODE", "JEST", "VITE"],
         githubUrl: "https://github.com/thalissongoncalves/08-Shopping-Cart",
@@ -46,7 +57,7 @@ const projectsData = [
     {
         id: "02",
         display: "block",
-        title: "02 - Trybewarts",
+        title: "Trybewarts",
         description: "Uma página de formulário da Escola de Magia de Trybewarts, em que as pessoas estudantes poderão enviar seus feedbacks sobre ela. O tema desse projeto é baseado na obra 'Harry Potter', de J. K. Rowling.",
         technologies: ["HTML", "CSS", "JAVASCRIPT"],
         githubUrl: "https://github.com/thalissongoncalves/05-Trybewarts",
@@ -57,7 +68,7 @@ const projectsData = [
     {
         id: "01",
         display: "block",
-        title: "01 - Paleta de Cores",
+        title: "Paleta de Cores",
         description: "Editor de arte com pixels em que a pessoa usuária poderá escolher uma cor em uma paleta de cores e poderá pintar o que quiser em um quadro branco 🎨 🧑‍🎨",
         technologies: ["HTML", "CSS", "JAVASCRIPT"],
         githubUrl: "https://github.com/thalissongoncalves/04-Paleta-de-Cores",

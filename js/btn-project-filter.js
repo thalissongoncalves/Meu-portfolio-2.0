@@ -51,6 +51,10 @@ const projectsIcon = [
     {
         tech: "ANGULAR",
         src: "./images/angular-icon.png"
+    },
+    {
+        tech: "BOOTSTRAP",
+        src: "./images/bootstrap-icon.png"
     }
 ];
 
