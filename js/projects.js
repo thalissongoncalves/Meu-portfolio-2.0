@@ -1,17 +1,18 @@
 const projectsData = [
     {
-        id: "07",
+        id: "08",
         display: "block",
-        title: "Meteora",
-        description: `Desenvolvi uma landing page responsiva para loja de roupa chamada Meteora, usando Bootstrap para praticar a responsividade utilizando grid, flex e classes bootstrap`,
-        technologies: ["HTML", "CSS", "BOOTSTRAP"],
-        githubUrl: "https://github.com/thalissongoncalves/Bootstrap/tree/main/Meteora",
-        alt: "Imagem demo da landing page Meteora",
-        deployUrl: "https://bootstrap-phi-ochre.vercel.app",
-        image: "./images/Meteora.png"
+        title: "Psicanalista Pedro Acerbi",
+        description: `O site foi cuidadosamente desenvolvido para oferecer uma experiência acolhedora e informativa. Agora você pode: Agendar sessões online e presenciais |
+ Conhecer a abordagem contemporânea de Pedro. | Explorar conteúdos sobre saúde mental. Dê o primeiro passo para uma nova versão de si mesmo! Vamos juntos nessa jornada de autoconhecimento e cura. 🌱`,
+        technologies: ["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP"],
+        githubUrl: "",
+        alt: "Imagem Demo do site do Pedro Acerbi",
+        deployUrl: "https://www.pedroacerbi.com.br",
+        image: "./images/25-pedro-acerbi.png"
     },
     {
-        id: "06",
+        id: "07",
         display: "block",
         title: "Rick & Morty",
         description: `🚀 Desenvolvi uma aplicação inspirada em "Rick & Morty" em apenas 5 dias, utilizando Angular, TypeScript, HTML e CSS. Integrei-a à API https://rickandmortyapi.com/, oferecendo recursos como login, páginas de listagem com rolagem infinita e busca global. Cada card possui detalhes e opções de favoritar/desfavoritar, além de um menu de perfil.`,
@@ -22,7 +23,7 @@ const projectsData = [
         image: "./images/24-rick-and-morty-project.png"
     },
     {
-        id: "05",
+        id: "06",
         display: "block",
         title: "Naya Outlet",
         description: "Um e-commerce feito como freelance para uma loja de roupas femininas onde desenvolvi o layout do 0 e também desenvolvi o site na Shopify e personalizando com HTML, CSS e JavaScript.",
@@ -31,6 +32,17 @@ const projectsData = [
         alt: "Imagem Demo do site Naya Outlet",
         deployUrl: "https://nayastore.com.br/",
         image: "./images/23-nayaoutlet-project-img.png",
+    },
+    {
+        id: "05",
+        display: "block",
+        title: "Meteora",
+        description: `Desenvolvi uma landing page responsiva para loja de roupa chamada Meteora, usando Bootstrap para praticar a responsividade utilizando grid, flex e classes bootstrap`,
+        technologies: ["HTML", "CSS", "BOOTSTRAP"],
+        githubUrl: "https://github.com/thalissongoncalves/Bootstrap/tree/main/Meteora",
+        alt: "Imagem demo da landing page Meteora",
+        deployUrl: "https://bootstrap-phi-ochre.vercel.app",
+        image: "./images/Meteora.png"
     },
     {
         id: "04",
