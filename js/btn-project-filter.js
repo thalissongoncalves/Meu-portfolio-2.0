@@ -55,6 +55,10 @@ const projectsIcon = [
     {
         tech: "BOOTSTRAP",
         src: "./images/bootstrap-icon.png"
+    },
+    {
+        tech: "WORDPRESS",
+        src: "https://img.icons8.com/color/32/wordpress.png"
     }
 ];
 
