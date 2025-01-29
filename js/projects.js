@@ -1,5 +1,16 @@
 const projectsData = [
     {
+        id: "02",
+        display: "block",
+        title: "Calculadora de Custos de Viagem",
+        description: "A Calculadora de Custos de Viagem é uma aplicação que ajuda você a planejar sua viagem, calculando: 💰 Custo com combustível baseado na distância e consumo médio do veículo. 🛣️ Custo com pedágios, considerando a quantidade e valor de cada um. ✅ Custo total da viagem, para você se organizar melhor!",
+        technologies: ["HTML", "CSS", "JAVASCRIPT", "TYPESCRIPT", "REACT", "VITE"],
+        githubUrl: "https://github.com/thalissongoncalves/calculadora-de-custos-de-viagem",
+        alt: "Preview da página do projeto Calculadora de Custos de Viagem, mostrando logotipo, campos de entrada e botão de cálculo",
+        deployUrl: "https://calculadora-de-custos-de-viagem.vercel.app/",
+        image: "./images/26-calculadora-de-custos-de-viagem.png",
+    },
+    {
         id: "03",
         display: "block",
         title: "Freelance - Pedro Acerbi Psychology",
@@ -64,28 +75,6 @@ const projectsData = [
         alt: "Imagem Demo do projeto Paleta de Cores",
         deployUrl: "https://04-paleta-de-cores.vercel.app/",
         image: "./images/04-paleta-de-cores-project-img.png",
-    },
-    {
-        id: "09",
-        display: "block",
-        title: "Projeto Pessoal - Zuck Challenge",
-        description: "Desenvolvi este projeto como parte do desafio Zuck Challenge, focado em soluções para inclusão de pessoas com daltonismo. A ideia principal é criar testes que identificam diferentes graus da doença e oferecer ferramentas para facilitar a interação dessas pessoas com plataformas como a Meta, promovendo acessibilidade e inclusão no ambiente digital.",
-        technologies: ["HTML", "CSS", "JAVASCRIPT"],
-        githubUrl: "https://github.com/thalissongoncalves/Trybe-Projects/tree/main/03-Zuck-Challenge-main",
-        alt: "Imagem Demo do projeto Zuck Challenge",
-        deployUrl: "https://03-zuck-challenge.vercel.app/",
-        image: "./images/03-zuck-challenge-project-img.png",
-    },
-    {
-        id: "10",
-        display: "block",
-        title: "Projeto Pessoal - Lições Aprendidas",
-        description: "Criei este projeto como parte da minha jornada na Trybe para compartilhar as lições e tecnologias que venho aprendendo. No site, apresento uma lista de conhecimentos já adquiridos e áreas que ainda quero explorar, demonstrando meu progresso e dedicação ao longo do curso.",
-        technologies: ["HTML", "CSS", "JAVASCRIPT"],
-        githubUrl: "https://github.com/thalissongoncalves/Trybe-Projects/tree/main/01-Project-Lessons-Learned-main",
-        alt: "Imagem Demo do projeto Lições Aprendidas",
-        deployUrl: "https://01-project-lessons-learned.vercel.app/",
-        image: "./images/01-lessons-learned-project-img.png",
     },
 ]
 
