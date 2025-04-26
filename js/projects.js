@@ -21,6 +21,17 @@ const projectsData = [
         deployUrl: "https://tg-rick-and-morty.vercel.app/",
         image: "./images/24-rick-and-morty-project.png",
     },
+    {
+        id: "03",
+        display: "block",
+        title: "Guia de Feiras Livres da Cidade",
+        description: "Guia de Feiras Livres da Cidade é uma aplicação web desenvolvida com React para facilitar a busca por feiras locais. O projeto foca em organização visual, componentização e renderização dinâmica de dados, entregando uma interface responsiva e intuitiva para o usuário.",
+        technologies: ["REACT", "TYPESCRIPT", "CSS", "VITE"],
+        githubUrl: "https://github.com/thalissongoncalves/city-street-fair-guide",
+        alt: "Landing Page do projeto Guia de Feiras Livres da Cidade.",
+        deployUrl: "https://city-street-fair-guide.vercel.app/",
+        image: "./images/27-guia-de-feiras-livres-da-cidade.png"
+    }
 ]
 
 export default projectsData;
