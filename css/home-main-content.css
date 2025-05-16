@@ -1,4 +1,7 @@
 @media screen and (max-width: 767px) {
+    .fullStackCertificateImg {
+        display: none;
+    }
 
     .menu-right-btn-container {
         background-color: transparent;
@@ -534,6 +537,10 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .fullStackCertificateImg {
+        display: none;
+    }
+
     .menu-right-btn-container {
         display: none;
     }
@@ -1059,6 +1066,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .fullStackCertificateImg {
+        display: none;
+    }
+
     .closeBtnMenuMobile {
         display: none;
     }
@@ -1596,9 +1607,15 @@
 
 @media screen and (max-width: 480px) {
     /* Estilos para telas pequenas em geral */
+    .fullStackCertificateImg {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1200px) {
+    .fullStackCertificateImg {
+        display: none;
+    }
     /* Estilos para telas grandes em geral */
     .about-me-main-infos {
         color: white;
