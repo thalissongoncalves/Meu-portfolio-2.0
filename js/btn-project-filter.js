@@ -59,6 +59,10 @@ const projectsIcon = [
     {
         tech: "WORDPRESS",
         src: "https://img.icons8.com/color/32/wordpress.png"
+    },
+    {
+        tech: "TAILWINDCSS",
+        src: "https://img.icons8.com/color/32/tailwindcss.png"
     }
 ];
 
