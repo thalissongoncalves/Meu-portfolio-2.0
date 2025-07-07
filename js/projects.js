@@ -35,6 +35,17 @@ const projectsData = [
     {
         id: "04",
         display: "block",
+        title: "Acadêmico - Solar System",
+        description: "Tenho o prazer de compartilhar um projeto pessoal que desenvolvi: uma simulação interativa do Sistema Solar! 🌍✨ A ideia foi criar uma interface intuitiva e visualmente atraente, permitindo a visualização dos planetas e suas características de forma dinâmica e funcional. Com isso, pude aprimorar minhas habilidades em React, além de trabalhar com HTML, CSS e JavaScript para dar vida a essa experiência.",
+        technologies: ["VITE", "REACT", "JAVASCRIPT", "HTML", "CSS"],
+        githubUrl: "https://github.com/thalissongoncalves/Trybe-Projects/tree/main/09-Solar-System-main",
+        alt: "Imagem Demo do projeto Solar System",
+        deployUrl: "https://09-solar-system.vercel.app/",
+        image: "./images/09-system-solar-project-img.png",
+    },
+    {
+        id: "05",
+        display: "block",
         title: "Freelance - Pedro Acerbi Psychology",
         description: "O layout é responsivo, com uma paleta de cores suaves que transmite tranquilidade. Naveguei por várias seções, onde encontrei informações claras sobre o terapeuta, sua abordagem e os serviços oferecidos. Há um formulário de contato funcional e seções explicativas bem dispostas. A estrutura é eficiente, proporcionando uma experiência de usuário fluida e intuitiva.",
         technologies: ["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP"],
