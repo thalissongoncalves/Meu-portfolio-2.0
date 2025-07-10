@@ -1,7 +1,7 @@
 import projectsData from "./projects.js";
 
 const filtersBtnBlock = document.querySelector(".main-projects-buttons-filter");
-const projects = ["HTML", "CSS", "JAVASCRIPT", "TYPESCRIPT", "REACT", "BOOTSTRAP", "TAILWINDCSS", "VITE"];
+const projects = ["HTML", "CSS", "JAVASCRIPT", "TYPESCRIPT", "REACT", "BOOTSTRAP", "TAILWINDCSS", "VITE", "TRYBE"];
 const projectsCardsCarousel = document.querySelector(".main-projects-cards-carousel");
 const projectsIcon = [
     {
@@ -232,7 +232,7 @@ projectsData.map((project) => {
     mainProjectCardTwoColumns.appendChild(mainProjectImage);
     mainProjectImage.appendChild(projectImageUrl);
     mainProjectCardTwoColumns.appendChild(mainProjectInfo);
-    mainProjectInfo.appendChild(mainProjectInfoDate);
+    // mainProjectInfo.appendChild(mainProjectInfoDate);
     mainProjectInfo.appendChild(mainProjectInfoTitle);
     mainProjectInfo.appendChild(mainProjectInfoDescription);
 
