@@ -62,6 +62,18 @@ const projectsData = [
     {
         id: "06",
         display: "block",
+        date: "16/01/2023",
+        title: "Acadêmico - Arte com Pixels",
+        description: "Projeto interativo feito com HTML, CSS e JavaScript, onde o usuário pinta uma grade de pixels com uma paleta de cores personalizada. Foi meu primeiro exercício prático com manipulação do DOM, eventos e criação dinâmica de elementos na web.",
+        technologies: ["TRYBE", "HTML", "CSS", "JAVASCRIPT"],
+        githubUrl: "https://github.com/thalissongoncalves/Trybe-Projects/tree/main/04-Paleta-de-Cores-main",
+        alt: "Imagem Demo do projeto Arte com Pixels",
+        deployUrl: "https://04-paleta-de-cores.vercel.app/",
+        image: "./images/04-paleta-de-cores-project-img.png",
+    },
+    {
+        id: "07",
+        display: "block",
         date: "14/12/2022",
         title: "Acadêmico - Visual Daltônico, Zuck Challenge (Meta)",
         description: "Projeto de HTML, CSS e JavaScript que propõe uma solução informativa para ajudar pessoas com daltonismo a identificar seu grau e navegar com mais acessibilidade. Criado em grupo como desafio de inclusão e diversidade da Meta, com foco em conscientização e usabilidade.",
@@ -72,7 +84,7 @@ const projectsData = [
         image: "./images/03-zuck-challenge-project-img.png",
     },
     {
-        id: "07",
+        id: "08",
         display: "block",
         date: "01/12/2022",
         title: "Acadêmico - Lessons Learned",
