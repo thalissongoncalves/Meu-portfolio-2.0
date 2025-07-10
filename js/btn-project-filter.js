@@ -1,7 +1,7 @@
 import projectsData from "./projects.js";
 
 const filtersBtnBlock = document.querySelector(".main-projects-buttons-filter");
-const projects = ["HTML", "CSS", "JAVASCRIPT", "REACT", "ANGULAR", "TYPESCRIPT", "BOOTSTRAP"];
+const projects = ["HTML", "CSS", "JAVASCRIPT", "TYPESCRIPT", "REACT", "BOOTSTRAP", "TAILWINDCSS", "VITE"];
 const projectsCardsCarousel = document.querySelector(".main-projects-cards-carousel");
 const projectsIcon = [
     {
@@ -63,6 +63,10 @@ const projectsIcon = [
     {
         tech: "TAILWINDCSS",
         src: "https://img.icons8.com/color/32/tailwindcss.png"
+    },
+    {
+        tech: "TRYBE",
+        src: "https://yt3.googleusercontent.com/m-BLIHP9qrnUe3prBJxSWrV0Kow4aNTuG18Q89jGOSvDIfWxF0LRmZVodhRVE01HdfWbWIarvh4=s900-c-k-c0x00ffffff-no-rj"
     }
 ];
 
@@ -192,10 +196,14 @@ projectsData.map((project) => {
     projectImageUrl.alt = project.alt;
     projectImageUrl.style.borderRadius = "5px";
     projectImageUrl.style.width = "100%";
+    projectImageUrl.style.height = "200px";
     const mainProjectInfo = document.createElement("div");
     mainProjectInfo.className = "main-project-info";
     const mainProjectInfoTitle = document.createElement("h2");
     mainProjectInfoTitle.innerText = project.title;
+    const mainProjectInfoDate = document.createElement("h3");
+    mainProjectInfoDate.innerText = project.date;
+    mainProjectInfoDate.style.fontSize = "12px";
     const mainProjectInfoDescription = document.createElement("p");
     mainProjectInfoDescription.innerText = project.description;
     const mainProjectBtns = document.createElement("div");
@@ -224,6 +232,7 @@ projectsData.map((project) => {
     mainProjectCardTwoColumns.appendChild(mainProjectImage);
     mainProjectImage.appendChild(projectImageUrl);
     mainProjectCardTwoColumns.appendChild(mainProjectInfo);
+    mainProjectInfo.appendChild(mainProjectInfoDate);
     mainProjectInfo.appendChild(mainProjectInfoTitle);
     mainProjectInfo.appendChild(mainProjectInfoDescription);
 
@@ -239,6 +248,7 @@ projectsData.map((project) => {
         const mainProjectCardTechnologiesIcon = document.createElement("img");
         mainProjectCardTechnologiesIcon.style.width = "32px";
         mainProjectCardTechnologiesIcon.style.height = "32px";
+        mainProjectCardTechnologiesIcon.style.margin = "2px";
         projectsIcon.map((icon) => {
             if (icon.tech === tech) {
                 mainProjectCardTechnologiesIcon.src = icon.src;

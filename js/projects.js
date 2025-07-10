@@ -2,6 +2,7 @@ const projectsData = [
     {
         id: "01",
         display: "block",
+        date: "02/07/2025",
         title: "Meus Links Favoritos",
         description: "Aplicação responsiva desenvolvida com React, TypeScript e Tailwind para cadastrar e gerenciar links favoritos com título, URL e descrição. Permite visualizar, abrir, ocultar ou excluir os links de forma intuitiva e fluida.",
         technologies: ["VITE", "REACT", "TYPESCRIPT", "TAILWINDCSS"],
@@ -13,6 +14,7 @@ const projectsData = [
     {
         id: "02",
         display: "block",
+        date: "05/06/2025",
         title: "Mini Controle Financeiro Pessoal",
         description: "Aplicação web de Controle Financeiro Pessoal desenvolvida com React e TypeScript. Permite cadastrar receitas e despesas, visualizar o total em tempo real e aplicar filtros por tipo de transação. Projeto com foco em componentização, tipagem segura, lógica de estado e experiência do usuário.",
         technologies: ["VITE", "REACT", "TYPESCRIPT", "HTML", "CSS"],
@@ -24,6 +26,7 @@ const projectsData = [
     {
         id: "03",
         display: "block",
+        date: "15/05/2025",
         title: "Guia de Feiras Livres da Cidade",
         description: "Guia de Feiras Livres da Cidade é uma aplicação web desenvolvida com React para facilitar a busca por feiras locais. O projeto foca em organização visual, componentização e renderização dinâmica de dados, entregando uma interface responsiva e intuitiva para o usuário.",
         technologies: ["VITE", "REACT", "TYPESCRIPT", "HTML", "CSS"],
@@ -35,17 +38,7 @@ const projectsData = [
     {
         id: "04",
         display: "block",
-        title: "Acadêmico - Solar System",
-        description: "Tenho o prazer de compartilhar um projeto pessoal que desenvolvi: uma simulação interativa do Sistema Solar! 🌍✨ A ideia foi criar uma interface intuitiva e visualmente atraente, permitindo a visualização dos planetas e suas características de forma dinâmica e funcional. Com isso, pude aprimorar minhas habilidades em React, além de trabalhar com HTML, CSS e JavaScript para dar vida a essa experiência.",
-        technologies: ["VITE", "REACT", "JAVASCRIPT", "HTML", "CSS"],
-        githubUrl: "https://github.com/thalissongoncalves/Trybe-Projects/tree/main/09-Solar-System-main",
-        alt: "Imagem Demo do projeto Solar System",
-        deployUrl: "https://09-solar-system.vercel.app/",
-        image: "./images/09-system-solar-project-img.png",
-    },
-    {
-        id: "05",
-        display: "block",
+        date: "09/07/2024",
         title: "Freelance - Pedro Acerbi Psychology",
         description: "O layout é responsivo, com uma paleta de cores suaves que transmite tranquilidade. Naveguei por várias seções, onde encontrei informações claras sobre o terapeuta, sua abordagem e os serviços oferecidos. Há um formulário de contato funcional e seções explicativas bem dispostas. A estrutura é eficiente, proporcionando uma experiência de usuário fluida e intuitiva.",
         technologies: ["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP"],
@@ -54,6 +47,43 @@ const projectsData = [
         deployUrl: "https://pedro-acerbi-psychology.vercel.app/",
         image: "./images/25-pedro-acerbi.png",
     },
+    {
+        id: "05",
+        display: "block",
+        date: "08/03/2023",
+        title: "Acadêmico - Solar System",
+        description: "Tenho o prazer de compartilhar um projeto pessoal que desenvolvi: uma simulação interativa do Sistema Solar! 🌍✨ A ideia foi criar uma interface intuitiva e visualmente atraente, permitindo a visualização dos planetas e suas características de forma dinâmica e funcional. Com isso, pude aprimorar minhas habilidades em React, além de trabalhar com HTML, CSS e JavaScript para dar vida a essa experiência.",
+        technologies: ["TRYBE", "VITE", "REACT", "JAVASCRIPT", "HTML", "CSS"],
+        githubUrl: "https://github.com/thalissongoncalves/Trybe-Projects/tree/main/09-Solar-System-main",
+        alt: "Imagem Demo do projeto Solar System",
+        deployUrl: "https://09-solar-system.vercel.app/",
+        image: "./images/09-system-solar-project-img.png",
+    },
+    {
+        id: "06",
+        display: "block",
+        date: "14/12/2022",
+        title: "Acadêmico - Visual Daltônico, Zuck Challenge (Meta)",
+        description: "Projeto de HTML, CSS e JavaScript que propõe uma solução informativa para ajudar pessoas com daltonismo a identificar seu grau e navegar com mais acessibilidade. Criado em grupo como desafio de inclusão e diversidade da Meta, com foco em conscientização e usabilidade.",
+        technologies: ["TRYBE", "HTML", "CSS", "JAVASCRIPT"],
+        githubUrl: "https://github.com/thalissongoncalves/Trybe-Projects/tree/main/03-Zuck-Challenge-main",
+        alt: "Imagem Demo do projeto Zuck Challenge",
+        deployUrl: "https://03-zuck-challenge.vercel.app/",
+        image: "./images/03-zuck-challenge-project-img.png",
+    },
+    {
+        id: "07",
+        display: "block",
+        date: "01/12/2022",
+        title: "Acadêmico - Lessons Learned",
+        description: "Projeto introdutório feito com HTML e CSS para treinar estrutura semântica, boas práticas de acessibilidade e estilização básica. A página apresenta conteúdos sobre aprendizados pessoais e futuros objetivos, usando elementos como listas, imagens, links e organização por seções (header, main, aside, footer).",
+        technologies: ["TRYBE", "HTML", "CSS"],
+        githubUrl: "https://github.com/thalissongoncalves/Trybe-Projects/tree/main/01-Project-Lessons-Learned-main",
+        alt: "Imagem Demo do projeto Lessons Learned",
+        deployUrl: "https://01-project-lessons-learned.vercel.app/",
+        image: "./images/01-lessons-learned-project-img.png",
+    },
+    
 ]
 
 export default projectsData;
