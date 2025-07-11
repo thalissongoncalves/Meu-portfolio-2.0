@@ -232,8 +232,8 @@ projectsData.map((project) => {
     mainProjectCardTwoColumns.appendChild(mainProjectImage);
     mainProjectImage.appendChild(projectImageUrl);
     mainProjectCardTwoColumns.appendChild(mainProjectInfo);
-    // mainProjectInfo.appendChild(mainProjectInfoDate);
     mainProjectInfo.appendChild(mainProjectInfoTitle);
+    mainProjectInfo.appendChild(mainProjectInfoDate);
     mainProjectInfo.appendChild(mainProjectInfoDescription);
 
     const mainProjectCardTechnologies = document.createElement("div");

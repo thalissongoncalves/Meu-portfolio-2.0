@@ -62,6 +62,18 @@ const projectsData = [
     {
         id: "06",
         display: "block",
+        date: "24/01/2023",
+        title: "Acadêmico - TrybeWarts",
+        description: "Projeto de formulário completo com validação em tempo real e exibição de dados ao final. Desenvolvido com HTML, CSS e JavaScript puro, o foco foi em eventos, manipulação de DOM e interatividade com o usuário.",
+        technologies: ["TRYBE", "HTML", "CSS", "JAVASCRIPT"],
+        githubUrl: "https://github.com/thalissongoncalves/Trybe-Projects/tree/main/05-Trybewarts-main",
+        alt: "Imagem Demo do projeto TrybeWarts",
+        deployUrl: "https://05-trybewarts.vercel.app/",
+        image: "./images/05-trybewarts-project-img.png",
+    },
+    {
+        id: "07",
+        display: "block",
         date: "16/01/2023",
         title: "Acadêmico - Arte com Pixels",
         description: "Projeto interativo feito com HTML, CSS e JavaScript, onde o usuário pinta uma grade de pixels com uma paleta de cores personalizada. Foi meu primeiro exercício prático com manipulação do DOM, eventos e criação dinâmica de elementos na web.",
@@ -72,7 +84,7 @@ const projectsData = [
         image: "./images/04-paleta-de-cores-project-img.png",
     },
     {
-        id: "07",
+        id: "08",
         display: "block",
         date: "14/12/2022",
         title: "Acadêmico - Visual Daltônico, Zuck Challenge (Meta)",
@@ -84,7 +96,7 @@ const projectsData = [
         image: "./images/03-zuck-challenge-project-img.png",
     },
     {
-        id: "08",
+        id: "09",
         display: "block",
         date: "01/12/2022",
         title: "Acadêmico - Lessons Learned",
