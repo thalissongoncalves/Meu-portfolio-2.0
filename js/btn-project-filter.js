@@ -201,9 +201,6 @@ projectsData.map((project) => {
     mainProjectInfo.className = "main-project-info";
     const mainProjectInfoTitle = document.createElement("h2");
     mainProjectInfoTitle.innerText = project.title;
-    const mainProjectInfoDate = document.createElement("h3");
-    mainProjectInfoDate.innerText = project.date;
-    mainProjectInfoDate.style.fontSize = "12px";
     const mainProjectInfoDescription = document.createElement("p");
     mainProjectInfoDescription.innerText = project.description;
     const mainProjectBtns = document.createElement("div");
@@ -233,7 +230,6 @@ projectsData.map((project) => {
     mainProjectImage.appendChild(projectImageUrl);
     mainProjectCardTwoColumns.appendChild(mainProjectInfo);
     mainProjectInfo.appendChild(mainProjectInfoTitle);
-    mainProjectInfo.appendChild(mainProjectInfoDate);
     mainProjectInfo.appendChild(mainProjectInfoDescription);
 
     const mainProjectCardTechnologies = document.createElement("div");
