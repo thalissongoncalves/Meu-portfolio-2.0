@@ -93,10 +93,10 @@ const projectsData = [
         title: "Acadêmico - Lessons Learned",
         description: "Projeto introdutório feito com HTML e CSS para treinar estrutura semântica, boas práticas de acessibilidade e estilização básica. A página apresenta conteúdos sobre aprendizados pessoais e futuros objetivos, usando elementos como listas, imagens, links e organização por seções (header, main, aside, footer).",
         technologies: ["TRYBE", "HTML", "CSS"],
-        githubUrl: "https://github.com/thalissongoncalves/Trybe-Projects/tree/main/01-Project-Lessons-Learned-main",
+        githubUrl: "https://github.com/thalissongoncalves/trybe-exercicios/tree/main/fundamentos/secao-02-introducao-a-html-e-css/project-lessons-learned",
         alt: "Imagem Demo do projeto Lessons Learned",
-        deployUrl: "https://01-project-lessons-learned.vercel.app/",
-        image: "./images/01-lessons-learned-project-img.png",
+        deployUrl: "https://lessons-learned-ashen.vercel.app/",
+        image: "./images/lessons-learned.png",
     },
     {
         id: "10",
