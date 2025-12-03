@@ -90,6 +90,17 @@ const projectsData = [
     {
         id: "09",
         display: "block",
+        title: "Acadêmico - Playground Functions",
+        description: "Projeto focado em lógica de programação utilizando JavaScript puro. Desenvolvi 10 funções principais e 3 desafios bônus envolvendo manipulação de strings, arrays, condicionais, cálculos matemáticos e pensamento lógico. O objetivo foi praticar fundações essenciais da linguagem e escrever soluções claras, funcionais e bem estruturadas.",
+        technologies: ["TRYBE", "JAVASCRIPT"],
+        githubUrl: "https://github.com/thalissongoncalves/trybe-exercicios/tree/main/fundamentos/secao-03-introducao-a-javascript/dia-05-json/playground-functions-projet",
+        alt: "Imagem Demo do projeto Playground Functions",
+        deployUrl: "#",
+        image: "./images/project-playground-functions.png",
+    },
+    {
+        id: "10",
+        display: "block",
         title: "Acadêmico - Lessons Learned",
         description: "Projeto introdutório feito com HTML e CSS para treinar estrutura semântica, boas práticas de acessibilidade e estilização básica. A página apresenta conteúdos sobre aprendizados pessoais e futuros objetivos, usando elementos como listas, imagens, links e organização por seções (header, main, aside, footer).",
         technologies: ["TRYBE", "HTML", "CSS"],
@@ -99,7 +110,7 @@ const projectsData = [
         image: "./images/lessons-learned.png",
     },
     {
-        id: "10",
+        id: "11",
         display: "block",
         title: "Acadêmico - Stomatopoda",
         description: "Projeto introdutório feito com HTML e CSS para treinar estrutura semântica, boas práticas de acessibilidade e estilização básica. A página apresenta conteúdos sobre o Stomatopoda, características gerais e fatos sobre o animal em formato de artigo.",
