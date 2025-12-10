@@ -28,7 +28,7 @@
     
     .avatar-block p {
         color: #8c8c8e;
-        font-size: 14px;
+        font-size: 1em;
         margin: 3px;
     }
 
@@ -47,7 +47,7 @@
     .avatar-block-name {
         color: white;
         display: flex;
-        font-size: 18px;
+        font-size: 1em;
         text-decoration: none;
         transition-duration: 0.5s;
     }
@@ -68,7 +68,7 @@
     .skills-tools-block p {
         color: white;
         display: flex;
-        font-size: 14px;
+        font-size: 1em;
         line-height: 35px;
     }
     
@@ -78,7 +78,7 @@
     
     .skills-tools-block > h2 {
         color: #0ce353;
-        font-size: 17px;
+        font-size: 1em;
         font-weight: 600;
     }
     
@@ -86,7 +86,7 @@
         background-color: transparent;
         border: none;
         color: white;
-        font-size: 12px;
+        font-size: 1em;
         font-weight: 600;
         letter-spacing: 2px;
         padding: 20px 30px;
@@ -176,7 +176,7 @@
 
     .skills-title h2 {
         color: #ffffff;
-        font-size: 20px;
+        font-size: 1em;
         font-weight: bold;
         text-transform: uppercase;
     }
@@ -229,7 +229,7 @@
     .skills-tools-block p {
         color: white;
         display: flex;
-        font-size: 12px;
+        font-size: 1em;
         line-height: 35px;
     }
     
@@ -240,7 +240,7 @@
     
     .skills-tools-block > h2 {
         color: #0ce353;
-        font-size: 15px;
+        font-size: 1em;
         font-weight: 600;
     }
     
@@ -248,7 +248,7 @@
         background-color: transparent;
         border: none;
         color: white;
-        font-size: 6px;
+        font-size: 1em;
         font-weight: 600;
         letter-spacing: 2px;
         padding: 10px 25px;
@@ -310,7 +310,7 @@
 
     .skills-title h2 {
         color: white;
-        font-size: 15px;
+        font-size: 1em;
         font-weight: bold;
         text-transform: uppercase;
     }
@@ -337,7 +337,7 @@
     .skills-tools-block p {
         color: white;
         display: flex;
-        font-size: 12px;
+        font-size: 1em;
         line-height: 35px;
     }
     
@@ -347,7 +347,7 @@
     
     .skills-tools-block > h2 {
         color: #ffffff;
-        font-size: 14px;
+        font-size: 1em;
         font-weight: 600;
     }
     
@@ -355,7 +355,7 @@
         background-color: transparent;
         border: none;
         color: white;
-        font-size: 12px;
+        font-size: 1em;
         font-weight: 600;
         letter-spacing: 2px;
         padding: 20px 30px;
@@ -418,7 +418,7 @@
 
     .skills-title h2 {
         color: white;
-        font-size: 20px;
+        font-size: 1em;
         font-weight: bold;
         text-transform: uppercase;
     }
