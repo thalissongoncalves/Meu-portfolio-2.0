@@ -90,6 +90,17 @@ const projectsData = [
     {
         id: "09",
         display: "block",
+        title: "Acadêmico - Trybe Calendar",
+        description: "Calendário interativo desenvolvido com JavaScript puro durante o módulo de Fundamentos da Trybe. O projeto aplica manipulação do DOM, eventos e lógica condicional para destacar feriados, interagir com dias do mês e gerenciar tarefas dinamicamente, sem uso de bibliotecas externas.",
+        technologies: ["TRYBE", "HTML", "CSS", "JAVASCRIPT"],
+        githubUrl: "https://github.com/thalissongoncalves/trybe-exercicios/tree/main/fundamentos/secao-04-javascript-dom-eventos-e-web-storage/dia-03-javascript-eventos/exercicios/calendario-tryber",
+        alt: "Imagem Demo do exercício Trybe Calendar",
+        deployUrl: "https://trybe-calendar.vercel.app/",
+        image: "./images/project-trybe-calendar.png",
+    },
+    {
+        id: "10",
+        display: "block",
         title: "Acadêmico - Supermercado Pirilampo",
         description: "Projeto focado em lógica de programação utilizando JavaScript puro. Desenvolvi 10 funções envolvendo manipulação de strings, arrays, objetos, json, condicionais, loops e pensamento lógico. O objetivo foi praticar fundações essenciais da linguagem e escrever soluções claras, funcionais e bem estruturadas.",
         technologies: ["TRYBE", "JAVASCRIPT"],
@@ -99,7 +110,7 @@ const projectsData = [
         image: "./images/project-supermercado-pirilampo.png",
     },
     {
-        id: "10",
+        id: "11",
         display: "block",
         title: "Acadêmico - Playground Functions",
         description: "Projeto focado em lógica de programação utilizando JavaScript puro. Desenvolvi 10 funções principais e 3 desafios bônus envolvendo manipulação de strings, arrays, condicionais, cálculos matemáticos e pensamento lógico. O objetivo foi praticar fundações essenciais da linguagem e escrever soluções claras, funcionais e bem estruturadas.",
@@ -110,7 +121,7 @@ const projectsData = [
         image: "./images/project-playground-functions.png",
     },
     {
-        id: "11",
+        id: "12",
         display: "block",
         title: "Acadêmico - Lessons Learned",
         description: "Projeto introdutório feito com HTML e CSS para treinar estrutura semântica, boas práticas de acessibilidade e estilização básica. A página apresenta conteúdos sobre aprendizados pessoais e futuros objetivos, usando elementos como listas, imagens, links e organização por seções (header, main, aside, footer).",
@@ -121,7 +132,7 @@ const projectsData = [
         image: "./images/lessons-learned.png",
     },
     {
-        id: "12",
+        id: "13",
         display: "block",
         title: "Acadêmico - Stomatopoda",
         description: "Projeto introdutório feito com HTML e CSS para treinar estrutura semântica, boas práticas de acessibilidade e estilização básica. A página apresenta conteúdos sobre o Stomatopoda, características gerais e fatos sobre o animal em formato de artigo.",
