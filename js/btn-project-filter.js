@@ -67,6 +67,10 @@ const projectsIcon = [
     {
         tech: "TRYBE",
         src: "https://yt3.googleusercontent.com/m-BLIHP9qrnUe3prBJxSWrV0Kow4aNTuG18Q89jGOSvDIfWxF0LRmZVodhRVE01HdfWbWIarvh4=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+        tech: "DOCKER",
+        src: "https://img.icons8.com/color/32/docker.png"
     }
 ];
 
