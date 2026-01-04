@@ -36,7 +36,7 @@ const projectsData = [
         id: "04",
         display: "block",
         title: "Freelance - Pedro Acerbi Psychology",
-        description: "O layout é responsivo, com uma paleta de cores suaves que transmite tranquilidade. Naveguei por várias seções, onde encontrei informações claras sobre o terapeuta, sua abordagem e os serviços oferecidos. Há um formulário de contato funcional e seções explicativas bem dispostas. A estrutura é eficiente, proporcionando uma experiência de usuário fluida e intuitiva.",
+        description: "Landing page profissional para psicólogo, desenvolvido com foco em apresentação de serviços, credibilidade e conversão. O projeto conta com layout responsivo, seções informativas (benefícios da terapia, perguntas frequentes e contato) e navegação clara para melhorar a experiência do usuário.",
         technologies: ["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP"],
         githubUrl: "https://github.com/thalissongoncalves/Pedro-Acerbi-Psychology",
         alt: "Imagem Demo do projeto Pedro Acerbi",
